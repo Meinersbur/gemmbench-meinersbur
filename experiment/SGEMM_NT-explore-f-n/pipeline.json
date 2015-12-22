@@ -1,0 +1,6591 @@
+{
+  "features": {
+    "compiler_version": {
+      "str": "5.2.1",
+      "list": [
+        "5",
+        "2",
+        "1"
+      ],
+      "raw": [
+        "gcc (Ubuntu 5.2.1-22ubuntu2) 5.2.1 20151010",
+        "Copyright (C) 2015 Free Software Foundation, Inc.",
+        "This is free software; see the source for copying conditions.  There is NO",
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+        "",
+        ""
+      ]
+    }
+  },
+  "fail": "no",
+  "state": {
+    "cur_dir": "/home/meinersbur/CK/gemmbench/script/SGEMM_NT",
+    "tmp_dir": "tmp"
+  },
+  "choices": {
+    "module_uoa": "b0ac08fe1d3c2615",
+    "compile_only_once": "yes",
+    "device_id": "",
+    "data_uoa": "gemmbench-cl-launcher-1.0",
+    "target_os_bits": "64",
+    "dataset_uoa": "SGEMM_NT",
+    "compile_type": "dynamic",
+    "host_os": "linux-64",
+    "gpu_freq": "max",
+    "skip_calibration": "yes",
+    "compiler_vars": {},
+    "dataset_file": "SGEMM_NT_4x1.json",
+    "target_os": "linux-64",
+    "no_state_check": "yes",
+    "cpu_freq": "max",
+    "cmd_key": "sgemm_nt",
+    "energy": "no"
+  },
+  "dependencies": {
+    "lib.cjson": {
+      "dict": {
+        "deps": {
+          "compiler": {
+            "dict": {
+              "deps": {},
+              "env": {
+                "CK_LIB_EXT": ".a",
+                "CK_GPROF_OUT_FILE": "gmon.out",
+                "CK_COMPILER_FLAG_PLUGIN": "-fplugin=",
+                "CK_CC": "gcc",
+                "CK_OBJDUMP": "objdump -d",
+                "CK_FLAG_PREFIX_VAR": "-D",
+                "CK_OPT_SPEED_SAFE": "-O2",
+                "CK_COMPILER_FLAG_OPENMP": "-fopenmp",
+                "CK_EXTRA_LIB_DL": "-ldl",
+                "CK_MAKE": "make",
+                "CK_PLUGIN_FLAG": "-fplugin=",
+                "CK_F90": "gfortran",
+                "CK_FLAGS_DLL": "-shared -fPIC",
+                "CK_DLL_EXT": ".so",
+                "CK_FLAGS_CREATE_OBJ": "-c",
+                "CK_CXX": "g++",
+                "CK_FLAGS_STATIC_LIB": "-fPIC",
+                "CK_LD_FLAGS_EXTRA": "",
+                "CK_EXTRA_LIB_M": "-lm",
+                "CK_OPT_SIZE": "-Os",
+                "CK_FLAG_PREFIX_INCLUDE": "-I",
+                "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt",
+                "CK_AR": "ar",
+                "CK_EXE_EXT": ".out",
+                "CK_COMPILER_FLAG_GPROF": "-pg",
+                "CK_OBJ_EXT": ".o",
+                "CK_COMPILER_FLAGS_OBLIGATORY": "",
+                "CK_FC": "gfortran",
+                "CK_OPT_SPEED": "-O3",
+                "CK_ASM_EXT": ".s",
+                "CK_LB_OUTPUT": "-o ",
+                "CK_F95": "gfortran",
+                "CK_FLAG_PREFIX_LIB_DIR": "-L",
+                "CK_LD": "ld",
+                "CK_COMPILER_FLAG_CPP11": "-std=c++11",
+                "CK_LB": "ar rcs",
+                "CK_FLAGS_CREATE_ASM": "-S",
+                "CK_PROFILER": "gprof",
+                "CK_FLAGS_OUTPUT": "-o ",
+                "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread",
+                "CK_FLAGS_STATIC_BIN": "-static -fPIC",
+                "CK_FLAGS_DLL_EXTRA": ""
+              },
+              "customize": {
+                "retarget": "no",
+                "env_prefix": "CK_ENV_COMPILER_GCC",
+                "skip_path": "yes",
+                "version_int": 88888,
+                "skip_add_to_ld_path": "yes",
+                "can_strip_dynamic_lib": "yes",
+                "languages": [
+                  "C",
+                  "CPP",
+                  "F77",
+                  "F90",
+                  "F95"
+                ],
+                "build_dir_name": "gcc",
+                "tool_prefix_configured": "yes",
+                "version": "local"
+              },
+              "soft_uoa": "3a8a82fa40bf992d",
+              "env_script": "env.sh",
+              "tags": [
+                "64bits",
+                "compiler",
+                "gcc",
+                "host-os-linux-64",
+                "lang-c",
+                "lang-cpp",
+                "lang-f77",
+                "lang-f90",
+                "lang-f95",
+                "target-os-linux-64",
+                "vlocal"
+              ],
+              "setup": {
+                "target_os_bits": "64",
+                "host_os_uoa": "4258b5fe54828a50",
+                "target_os_uoa": "4258b5fe54828a50",
+                "version": "local"
+              }
+            },
+            "choices": [
+              "44609897464b20a3"
+            ],
+            "cus": {
+              "retarget": "no",
+              "env_prefix": "CK_ENV_COMPILER_GCC",
+              "skip_path": "yes",
+              "version_int": 88888,
+              "skip_add_to_ld_path": "yes",
+              "can_strip_dynamic_lib": "yes",
+              "languages": [
+                "C",
+                "CPP",
+                "F77",
+                "F90",
+                "F95"
+              ],
+              "build_dir_name": "gcc",
+              "tool_prefix_configured": "yes",
+              "version": "local"
+            },
+            "local": "yes",
+            "bat": ". /home/meinersbur/CK/ck-autotuning/env/compiler-gcc-local-linux-h64-t64/env.sh\n",
+            "tags": "compiler,lang-cpp",
+            "num_entries": 1,
+            "sort": 10,
+            "ver": "local",
+            "build_dir_name": "gcc",
+            "uoa": "44609897464b20a3"
+          }
+        },
+        "env": {
+          "CK_ENV_LIB_CJSON_INCLUDE_NAME": "cJSON.h",
+          "CK_ENV_LIB_CJSON_DYNAMIC_NAME": "libcjson.so",
+          "CK_ENV_LIB_CJSON_STATIC_NAME": "libcjson.a"
+        },
+        "env_script": "env.sh",
+        "customize": {
+          "env_prefix": "CK_ENV_LIB_CJSON",
+          "skip_add_to_bin": "yes",
+          "path_include": "/home/meinersbur/CK-TOOLS/lib-cjson-2013-gcc-local-linux-64/include",
+          "skip_add_to_path": "yes",
+          "static_lib": "libcjson.a",
+          "version": "2013",
+          "extra_dir": "",
+          "include_name": "cJSON.h",
+          "add_include_path": "yes",
+          "path_install": "/home/meinersbur/CK-TOOLS/lib-cjson-2013-gcc-local-linux-64",
+          "dynamic_lib": "libcjson.so",
+          "version_int": 2013,
+          "path_lib": "/home/meinersbur/CK-TOOLS/lib-cjson-2013-gcc-local-linux-64/lib"
+        },
+        "package_uoa": "a8b63434956b0c16",
+        "soft_uoa": "59c52485faf01e9a",
+        "tags": [
+          "64bits",
+          "cjson",
+          "host-os-linux-64",
+          "lib",
+          "target-os-linux-64",
+          "v2013"
+        ],
+        "setup": {
+          "deps_compiler": "44609897464b20a3",
+          "target_os_bits": "64",
+          "host_os_uoa": "4258b5fe54828a50",
+          "target_os_uoa": "4258b5fe54828a50",
+          "version": "2013"
+        }
+      },
+      "choices": [
+        "87a43d08dc7461cf"
+      ],
+      "cus": {
+        "env_prefix": "CK_ENV_LIB_CJSON",
+        "skip_add_to_bin": "yes",
+        "path_include": "/home/meinersbur/CK-TOOLS/lib-cjson-2013-gcc-local-linux-64/include",
+        "skip_add_to_path": "yes",
+        "static_lib": "libcjson.a",
+        "version": "2013",
+        "extra_dir": "",
+        "include_name": "cJSON.h",
+        "add_include_path": "yes",
+        "path_install": "/home/meinersbur/CK-TOOLS/lib-cjson-2013-gcc-local-linux-64",
+        "dynamic_lib": "libcjson.so",
+        "version_int": 2013,
+        "path_lib": "/home/meinersbur/CK-TOOLS/lib-cjson-2013-gcc-local-linux-64/lib"
+      },
+      "local": "yes",
+      "bat": ". /home/meinersbur/CK/local/env/87a43d08dc7461cf/env.sh\n",
+      "tags": "lib,cjson",
+      "num_entries": 1,
+      "ver": "2013",
+      "sort": 20,
+      "uoa": "87a43d08dc7461cf"
+    },
+    "lib_opencl": {
+      "dict": {
+        "deps": {},
+        "env": {
+          "CK_ENV_LIB_OPENCL_STATIC_NAME": "libOpenCL.so",
+          "CK_ENV_LIB_OPENCL_INCLUDE_NAME": "CL/opencl.h",
+          "CK_ENV_LIB_OPENCL_DYNAMIC_NAME": "libOpenCL.so"
+        },
+        "customize": {
+          "env_prefix": "CK_ENV_LIB_OPENCL",
+          "path_bin": "/usr/bin",
+          "path_include": "/usr/include",
+          "tool_dir_extra_configured": "yes",
+          "static_lib": "libOpenCL.so",
+          "version": "1.1",
+          "dynamic_lib": "libOpenCL.so",
+          "include_name": "CL/opencl.h",
+          "skip_add_to_ld_path": "yes",
+          "path_install": "/usr",
+          "add_include_path": "yes",
+          "version_int": 1010000,
+          "path_lib": "/usr/lib64"
+        },
+        "soft_uoa": "a30b31e7c953eb6f",
+        "env_script": "env.sh",
+        "tags": [
+          "64bits",
+          "host-os-linux-64",
+          "lib",
+          "opencl",
+          "target-os-linux-64",
+          "v1",
+          "v1.1"
+        ],
+        "setup": {
+          "target_os_bits": "64",
+          "host_os_uoa": "4258b5fe54828a50",
+          "target_os_uoa": "4258b5fe54828a50",
+          "version": "1.1"
+        }
+      },
+      "choices": [
+        "4644acab1cfc7f60"
+      ],
+      "cus": {
+        "env_prefix": "CK_ENV_LIB_OPENCL",
+        "path_bin": "/usr/bin",
+        "path_include": "/usr/include",
+        "tool_dir_extra_configured": "yes",
+        "static_lib": "libOpenCL.so",
+        "version": "1.1",
+        "dynamic_lib": "libOpenCL.so",
+        "include_name": "CL/opencl.h",
+        "skip_add_to_ld_path": "yes",
+        "path_install": "/usr",
+        "add_include_path": "yes",
+        "version_int": 1010000,
+        "path_lib": "/usr/lib64"
+      },
+      "local": "yes",
+      "bat": ". /home/meinersbur/CK/local/env/4644acab1cfc7f60/env.sh\n",
+      "tags": "lib,opencl",
+      "num_entries": 1,
+      "ver": "1.1",
+      "sort": 15,
+      "uoa": "4644acab1cfc7f60"
+    },
+    "compiler": {
+      "dict": {
+        "deps": {},
+        "env": {
+          "CK_LIB_EXT": ".a",
+          "CK_GPROF_OUT_FILE": "gmon.out",
+          "CK_COMPILER_FLAG_PLUGIN": "-fplugin=",
+          "CK_CC": "gcc",
+          "CK_OBJDUMP": "objdump -d",
+          "CK_FLAG_PREFIX_VAR": "-D",
+          "CK_OPT_SPEED_SAFE": "-O2",
+          "CK_COMPILER_FLAG_OPENMP": "-fopenmp",
+          "CK_EXTRA_LIB_DL": "-ldl",
+          "CK_MAKE": "make",
+          "CK_PLUGIN_FLAG": "-fplugin=",
+          "CK_F90": "gfortran",
+          "CK_FLAGS_DLL": "-shared -fPIC",
+          "CK_DLL_EXT": ".so",
+          "CK_FLAGS_CREATE_OBJ": "-c",
+          "CK_CXX": "g++",
+          "CK_FLAGS_STATIC_LIB": "-fPIC",
+          "CK_LD_FLAGS_EXTRA": "",
+          "CK_EXTRA_LIB_M": "-lm",
+          "CK_OPT_SIZE": "-Os",
+          "CK_FLAG_PREFIX_INCLUDE": "-I",
+          "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt",
+          "CK_AR": "ar",
+          "CK_EXE_EXT": ".out",
+          "CK_COMPILER_FLAG_GPROF": "-pg",
+          "CK_OBJ_EXT": ".o",
+          "CK_COMPILER_FLAGS_OBLIGATORY": "",
+          "CK_FC": "gfortran",
+          "CK_OPT_SPEED": "-O3",
+          "CK_ASM_EXT": ".s",
+          "CK_LB_OUTPUT": "-o ",
+          "CK_F95": "gfortran",
+          "CK_FLAG_PREFIX_LIB_DIR": "-L",
+          "CK_LD": "ld",
+          "CK_COMPILER_FLAG_CPP11": "-std=c++11",
+          "CK_LB": "ar rcs",
+          "CK_FLAGS_CREATE_ASM": "-S",
+          "CK_PROFILER": "gprof",
+          "CK_FLAGS_OUTPUT": "-o ",
+          "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread",
+          "CK_FLAGS_STATIC_BIN": "-static -fPIC",
+          "CK_FLAGS_DLL_EXTRA": ""
+        },
+        "customize": {
+          "retarget": "no",
+          "env_prefix": "CK_ENV_COMPILER_GCC",
+          "skip_path": "yes",
+          "version_int": 88888,
+          "skip_add_to_ld_path": "yes",
+          "can_strip_dynamic_lib": "yes",
+          "languages": [
+            "C",
+            "CPP",
+            "F77",
+            "F90",
+            "F95"
+          ],
+          "build_dir_name": "gcc",
+          "tool_prefix_configured": "yes",
+          "version": "local"
+        },
+        "soft_uoa": "3a8a82fa40bf992d",
+        "env_script": "env.sh",
+        "tags": [
+          "64bits",
+          "compiler",
+          "gcc",
+          "host-os-linux-64",
+          "lang-c",
+          "lang-cpp",
+          "lang-f77",
+          "lang-f90",
+          "lang-f95",
+          "target-os-linux-64",
+          "vlocal"
+        ],
+        "setup": {
+          "target_os_bits": "64",
+          "host_os_uoa": "4258b5fe54828a50",
+          "target_os_uoa": "4258b5fe54828a50",
+          "version": "local"
+        }
+      },
+      "choices": [
+        "44609897464b20a3"
+      ],
+      "cus": {
+        "retarget": "no",
+        "env_prefix": "CK_ENV_COMPILER_GCC",
+        "skip_path": "yes",
+        "version_int": 88888,
+        "skip_add_to_ld_path": "yes",
+        "can_strip_dynamic_lib": "yes",
+        "languages": [
+          "C",
+          "CPP",
+          "F77",
+          "F90",
+          "F95"
+        ],
+        "build_dir_name": "gcc",
+        "tool_prefix_configured": "yes",
+        "version": "local"
+      },
+      "local": "yes",
+      "bat": ". /home/meinersbur/CK/ck-autotuning/env/compiler-gcc-local-linux-h64-t64/env.sh\n",
+      "tags": "compiler,lang-cpp",
+      "num_entries": 1,
+      "sort": 10,
+      "ver": "local",
+      "build_dir_name": "gcc",
+      "uoa": "44609897464b20a3"
+    },
+    "lib.xopenme": {
+      "dict": {
+        "deps": {
+          "compiler": {
+            "dict": {
+              "deps": {},
+              "env": {
+                "CK_LIB_EXT": ".a",
+                "CK_GPROF_OUT_FILE": "gmon.out",
+                "CK_COMPILER_FLAG_PLUGIN": "-fplugin=",
+                "CK_CC": "gcc",
+                "CK_OBJDUMP": "objdump -d",
+                "CK_FLAG_PREFIX_VAR": "-D",
+                "CK_OPT_SPEED_SAFE": "-O2",
+                "CK_COMPILER_FLAG_OPENMP": "-fopenmp",
+                "CK_EXTRA_LIB_DL": "-ldl",
+                "CK_MAKE": "make",
+                "CK_PLUGIN_FLAG": "-fplugin=",
+                "CK_F90": "gfortran",
+                "CK_FLAGS_DLL": "-shared -fPIC",
+                "CK_DLL_EXT": ".so",
+                "CK_FLAGS_CREATE_OBJ": "-c",
+                "CK_CXX": "g++",
+                "CK_FLAGS_STATIC_LIB": "-fPIC",
+                "CK_LD_FLAGS_EXTRA": "",
+                "CK_EXTRA_LIB_M": "-lm",
+                "CK_OPT_SIZE": "-Os",
+                "CK_FLAG_PREFIX_INCLUDE": "-I",
+                "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt",
+                "CK_AR": "ar",
+                "CK_EXE_EXT": ".out",
+                "CK_COMPILER_FLAG_GPROF": "-pg",
+                "CK_OBJ_EXT": ".o",
+                "CK_COMPILER_FLAGS_OBLIGATORY": "",
+                "CK_FC": "gfortran",
+                "CK_OPT_SPEED": "-O3",
+                "CK_ASM_EXT": ".s",
+                "CK_LB_OUTPUT": "-o ",
+                "CK_F95": "gfortran",
+                "CK_FLAG_PREFIX_LIB_DIR": "-L",
+                "CK_LD": "ld",
+                "CK_COMPILER_FLAG_CPP11": "-std=c++11",
+                "CK_LB": "ar rcs",
+                "CK_FLAGS_CREATE_ASM": "-S",
+                "CK_PROFILER": "gprof",
+                "CK_FLAGS_OUTPUT": "-o ",
+                "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread",
+                "CK_FLAGS_STATIC_BIN": "-static -fPIC",
+                "CK_FLAGS_DLL_EXTRA": ""
+              },
+              "customize": {
+                "retarget": "no",
+                "env_prefix": "CK_ENV_COMPILER_GCC",
+                "skip_path": "yes",
+                "version_int": 88888,
+                "skip_add_to_ld_path": "yes",
+                "can_strip_dynamic_lib": "yes",
+                "languages": [
+                  "C",
+                  "CPP",
+                  "F77",
+                  "F90",
+                  "F95"
+                ],
+                "build_dir_name": "gcc",
+                "tool_prefix_configured": "yes",
+                "version": "local"
+              },
+              "soft_uoa": "3a8a82fa40bf992d",
+              "env_script": "env.sh",
+              "tags": [
+                "64bits",
+                "compiler",
+                "gcc",
+                "host-os-linux-64",
+                "lang-c",
+                "lang-cpp",
+                "lang-f77",
+                "lang-f90",
+                "lang-f95",
+                "target-os-linux-64",
+                "vlocal"
+              ],
+              "setup": {
+                "target_os_bits": "64",
+                "host_os_uoa": "4258b5fe54828a50",
+                "target_os_uoa": "4258b5fe54828a50",
+                "version": "local"
+              }
+            },
+            "choices": [
+              "44609897464b20a3"
+            ],
+            "cus": {
+              "retarget": "no",
+              "env_prefix": "CK_ENV_COMPILER_GCC",
+              "skip_path": "yes",
+              "version_int": 88888,
+              "skip_add_to_ld_path": "yes",
+              "can_strip_dynamic_lib": "yes",
+              "languages": [
+                "C",
+                "CPP",
+                "F77",
+                "F90",
+                "F95"
+              ],
+              "build_dir_name": "gcc",
+              "tool_prefix_configured": "yes",
+              "version": "local"
+            },
+            "local": "yes",
+            "bat": ". /home/meinersbur/CK/ck-autotuning/env/compiler-gcc-local-linux-h64-t64/env.sh\n",
+            "tags": "compiler,lang-cpp",
+            "num_entries": 1,
+            "sort": 10,
+            "ver": "local",
+            "build_dir_name": "gcc",
+            "uoa": "44609897464b20a3"
+          }
+        },
+        "env": {
+          "CK_ENV_LIB_RTL_XOPENME_INCLUDE_NAME": "xopenme.h",
+          "CK_ENV_LIB_RTL_XOPENME_DYNAMIC_NAME": "librtlxopenme.so",
+          "CK_ENV_LIB_RTL_XOPENME_STATIC_NAME": "librtlxopenme.a"
+        },
+        "env_script": "env.sh",
+        "customize": {
+          "env_prefix": "CK_ENV_LIB_RTL_XOPENME",
+          "skip_add_to_bin": "yes",
+          "path_include": "/home/meinersbur/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-local-linux-64/include",
+          "skip_add_to_path": "yes",
+          "static_lib": "librtlxopenme.a",
+          "version": "0.3",
+          "extra_dir": "",
+          "include_name": "xopenme.h",
+          "add_include_path": "yes",
+          "path_install": "/home/meinersbur/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-local-linux-64",
+          "dynamic_lib": "librtlxopenme.so",
+          "version_int": 3,
+          "path_lib": "/home/meinersbur/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-local-linux-64/lib"
+        },
+        "package_uoa": "0573487b8121d094",
+        "soft_uoa": "673507878d649b4a",
+        "tags": [
+          "64bits",
+          "host-os-linux-64",
+          "lang-c",
+          "lang-cpp",
+          "lang-f77",
+          "lang-f90",
+          "lang-f95",
+          "lib",
+          "rtl",
+          "target-os-linux-64",
+          "v0",
+          "v0.3",
+          "xopenme"
+        ],
+        "setup": {
+          "deps_compiler": "44609897464b20a3",
+          "target_os_bits": "64",
+          "host_os_uoa": "4258b5fe54828a50",
+          "target_os_uoa": "4258b5fe54828a50",
+          "version": "0.3"
+        }
+      },
+      "choices": [
+        "d71441ab37e8182a"
+      ],
+      "cus": {
+        "env_prefix": "CK_ENV_LIB_RTL_XOPENME",
+        "skip_add_to_bin": "yes",
+        "path_include": "/home/meinersbur/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-local-linux-64/include",
+        "skip_add_to_path": "yes",
+        "static_lib": "librtlxopenme.a",
+        "version": "0.3",
+        "extra_dir": "",
+        "include_name": "xopenme.h",
+        "add_include_path": "yes",
+        "path_install": "/home/meinersbur/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-local-linux-64",
+        "dynamic_lib": "librtlxopenme.so",
+        "version_int": 3,
+        "path_lib": "/home/meinersbur/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-local-linux-64/lib"
+      },
+      "local": "yes",
+      "bat": ". /home/meinersbur/CK/local/env/d71441ab37e8182a/env.sh\n",
+      "tags": "lib,xopenme",
+      "num_entries": 1,
+      "ver": "0.3",
+      "sort": 30,
+      "uoa": "d71441ab37e8182a"
+    }
+  },
+  "speed": "yes",
+  "ready": "yes",
+  "choices_desc": {
+    "##compiler_flags#bool-tree-sra": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-sra",
+        "-fno-tree-sra"
+      ],
+      "desc": "compiler flag: -ftree-sra",
+      "sort": 11730,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-min-inline-recursive-probability": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param min-inline-recursive-probability=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30230,
+      "desc": "compiler flag: --param min-inline-recursive-probability= (Inline recursively only when the probability of call being executed exceeds the parameter)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-tracer-min-branch-probability": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param tracer-min-branch-probability=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 30780,
+      "desc": "compiler flag: --param tracer-min-branch-probability= (Stop forward growth if the probability of best edge is less than this threshold (in percent). Used when profile feedback is not available)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-fsm-thread-length": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-fsm-thread-length=",
+      "explore_start": 1,
+      "explore_stop": 999999,
+      "sort": 31940,
+      "desc": "compiler flag: --param max-fsm-thread-length= (Maximum number of basic blocks on a finite state automaton jump thread path)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-math-errno": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fmath-errno",
+        "-fno-math-errno"
+      ],
+      "desc": "compiler flag: -fno-math-errno",
+      "sort": 10860,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-strict-aliasing": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fstrict-aliasing",
+        "-fno-strict-aliasing"
+      ],
+      "desc": "compiler flag: -fstrict-aliasing",
+      "sort": 11400,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-phiprop": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-phiprop",
+        "-fno-tree-phiprop"
+      ],
+      "desc": "compiler flag: -ftree-phiprop",
+      "sort": 11600,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-loop-invariant-max-bbs-in-loop": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param loop-invariant-max-bbs-in-loop=",
+      "explore_start": 0,
+      "explore_stop": 20000,
+      "sort": 31500,
+      "desc": "compiler flag: --param loop-invariant-max-bbs-in-loop= (Max basic blocks number in loop for loop invariant motion)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-sccvn-max-scc-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sccvn-max-scc-size=",
+      "explore_start": 0,
+      "explore_stop": 20000,
+      "sort": 31360,
+      "desc": "compiler flag: --param sccvn-max-scc-size= (Maximum size of a SCC before SCCVN stops processing a function)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-inline-small-functions": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-finline-small-functions",
+        "-fno-inline-small-functions"
+      ],
+      "desc": "compiler flag: -finline-small-functions",
+      "sort": 10470,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-sched-rank-heuristic": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-rank-heuristic",
+        "-fno-sched-rank-heuristic"
+      ],
+      "desc": "compiler flag: -fsched-rank-heuristic",
+      "sort": 11170,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param--finline-limit=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-finline-limit=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30070,
+      "desc": "compiler flag: -finline-limit=",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_env_uoa": {
+      "choices": [
+        "44609897464b20a3"
+      ],
+      "sort": 2000,
+      "has_choice": "yes",
+      "type": "uoa"
+    },
+    "##compiler_flags#bool-ipa-sra": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fipa-sra",
+        "-fno-ipa-sra"
+      ],
+      "desc": "compiler flag: -fipa-sra",
+      "sort": 10270,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-branch-probabilities": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fbranch-probabilities",
+        "-fno-branch-probabilities"
+      ],
+      "desc": "compiler flag: -fbranch-probabilities",
+      "sort": 10030,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-reschedule-modulo-scheduled-loops": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-freschedule-modulo-scheduled-loops",
+        "-fno-reschedule-modulo-scheduled-loops"
+      ],
+      "desc": "compiler flag: -freschedule-modulo-scheduled-loops",
+      "sort": 11080,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-loop-unroll-jam-depth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param loop-unroll-jam-depth=",
+      "explore_start": 0,
+      "explore_stop": 4,
+      "sort": 31460,
+      "desc": "compiler flag: --param loop-unroll-jam-depth= (depth of unrolled loop for unroll-and-jam)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-cx-limited-range": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcx-limited-range",
+        "-fno-cx-limited-range"
+      ],
+      "desc": "compiler flag: -fcx-limited-range",
+      "sort": 10170,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-unswitch-loops": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-funswitch-loops",
+        "-fno-unswitch-loops"
+      ],
+      "desc": "compiler flag: -funswitch-loops",
+      "sort": 11840,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-lto-min-partition": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param lto-min-partition=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 31730,
+      "desc": "compiler flag: --param lto-min-partition= (Minimal size of a partition for LTO (in estimated instructions))",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-ipa-cp-alignment": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fipa-cp-alignment",
+        "-fno-ipa-cp-alignment"
+      ],
+      "desc": "compiler flag: -fipa-cp-alignment",
+      "sort": 10500,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-optimize-sibling-calls": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-foptimize-sibling-calls",
+        "-fno-optimize-sibling-calls"
+      ],
+      "desc": "compiler flag: -foptimize-sibling-calls",
+      "sort": 10960,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-isolate-erroneous-paths-attribute": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fisolate-erroneous-paths-attribute",
+        "-fno-isolate-erroneous-paths-attribute"
+      ],
+      "desc": "compiler flag: -fisolate-erroneous-paths-attribute",
+      "sort": 10600,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-dse-active-local-stores": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-dse-active-local-stores=",
+      "explore_start": 0,
+      "explore_stop": 10000,
+      "sort": 31280,
+      "desc": "compiler flag: --param max-dse-active-local-stores= (Maximum number of active local stores in RTL dead store elimination)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-sched-insn-conflict-delay": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-sched-insn-conflict-delay=",
+      "explore_start": 1,
+      "explore_stop": 10,
+      "sort": 31120,
+      "desc": "compiler flag: --param max-sched-insn-conflict-delay= (The maximum conflict delay for an insn to be considered for speculative motion)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-omega-max-wild-cards": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param omega-max-wild-cards=",
+      "explore_start": 0,
+      "explore_stop": 36,
+      "sort": 30940,
+      "desc": "compiler flag: --param omega-max-wild-cards= (Bound on the number of wild cards in Omega constraint systems)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-ipa-sra-ptr-growth-factor": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipa-sra-ptr-growth-factor=",
+      "explore_start": 0,
+      "explore_stop": 4,
+      "sort": 31600,
+      "desc": "compiler flag: --param ipa-sra-ptr-growth-factor= (Maximum allowed growth of size of new parameters ipa-sra replacesa pointer to an aggregate with)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-iv-consider-all-candidates-bound": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param iv-consider-all-candidates-bound=",
+      "explore_start": 0,
+      "explore_stop": 60,
+      "sort": 30860,
+      "desc": "compiler flag: --param iv-consider-all-candidates-bound= (Bound on number of candidates below that all candidates are considered in iv optimizations)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-cse-follow-jumps": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcse-follow-jumps",
+        "-fno-cse-follow-jumps"
+      ],
+      "desc": "compiler flag: -fcse-follow-jumps",
+      "sort": 10140,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-loop-block": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-floop-block",
+        "-fno-loop-block"
+      ],
+      "desc": "compiler flag: -floop-block",
+      "sort": 10650,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-unit-at-a-time": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-funit-at-a-time",
+        "-fno-unit-at-a-time"
+      ],
+      "desc": "compiler flag: -funit-at-a-time",
+      "sort": 11790,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-early-inlining": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fearly-inlining",
+        "-fno-early-inlining"
+      ],
+      "desc": "compiler flag: -fearly-inlining",
+      "sort": 10260,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-peel-times": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-peel-times=",
+      "explore_start": 0,
+      "explore_stop": 32,
+      "sort": 30520,
+      "desc": "compiler flag: --param max-peel-times= (The maximum number of peelings of a single loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-ira-share-spill-slots": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fira-share-spill-slots",
+        "-fno-ira-share-spill-slots"
+      ],
+      "desc": "compiler flag: -fno-ira-share-spill-slots",
+      "sort": 10580,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-gcse-unrestricted-cost": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param gcse-unrestricted-cost=",
+      "explore_start": 0,
+      "explore_stop": 6,
+      "sort": 30460,
+      "desc": "compiler flag: --param gcse-unrestricted-cost= (Cost at which GCSE optimizations will not constraint the distance an expression can travel)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-forward-propagate": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fforward-propagate",
+        "-fno-forward-propagate"
+      ],
+      "desc": "compiler flag: -fforward-propagate",
+      "sort": 10330,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-sched-spec-load": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-spec-load",
+        "-fno-sched-spec-load"
+      ],
+      "desc": "compiler flag: -fsched-spec-load",
+      "sort": 11120,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-tracer-min-branch-probability-feedback": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param tracer-min-branch-probability-feedback=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 30770,
+      "desc": "compiler flag: --param tracer-min-branch-probability-feedback= (Stop forward growth if the probability of best edge is less than this threshold (in percent). Used when profile feedback is available)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param--fsched-stalled-insns-dep[=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-fsched-stalled-insns-dep[=]",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30120,
+      "desc": "compiler flag: -fsched-stalled-insns-dep[=]",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-sched-extend-regions-iters": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-sched-extend-regions-iters=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 31110,
+      "desc": "compiler flag: --param max-sched-extend-regions-iters= (The maximum number of iterations through CFG to extend regions)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-copy-prop": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-copy-prop",
+        "-fno-tree-copy-prop"
+      ],
+      "desc": "compiler flag: -ftree-copy-prop",
+      "sort": 11500,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-sched-state-edge-prob-cutoff": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sched-state-edge-prob-cutoff=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 31140,
+      "desc": "compiler flag: --param sched-state-edge-prob-cutoff= (The minimum probability an edge must have for the scheduler to save its state across it.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-pta": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-pta",
+        "-fno-tree-pta"
+      ],
+      "desc": "compiler flag: -ftree-pta",
+      "sort": 11690,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-finite-math-only": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ffinite-math-only",
+        "-fno-finite-math-only"
+      ],
+      "desc": "compiler flag: -ffinite-math-only",
+      "sort": 10310,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-reorder-blocks": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-freorder-blocks",
+        "-fno-reorder-blocks"
+      ],
+      "desc": "compiler flag: -freorder-blocks",
+      "sort": 11040,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-l1-cache-line-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param l1-cache-line-size=",
+      "explore_start": 0,
+      "explore_stop": 64,
+      "sort": 31320,
+      "desc": "compiler flag: --param l1-cache-line-size= (The size of L1 cache line)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-bit-ccp": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-bit-ccp",
+        "-fno-tree-bit-ccp"
+      ],
+      "desc": "compiler flag: -ftree-bit-ccp",
+      "sort": 11440,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-inline": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-finline",
+        "-fno-inline"
+      ],
+      "desc": "compiler flag: -fno-inline",
+      "sort": 10850,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-associative-math": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fassociative-math",
+        "-fno-associative-math"
+      ],
+      "desc": "compiler flag: -fassociative-math",
+      "sort": 10010,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-forwprop": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-forwprop",
+        "-fno-tree-forwprop"
+      ],
+      "desc": "compiler flag: -ftree-forwprop",
+      "sort": 11550,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-tail-merge-iterations": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-tail-merge-iterations=",
+      "explore_start": 0,
+      "explore_stop": 4,
+      "sort": 31800,
+      "desc": "compiler flag: --param max-tail-merge-iterations= (Maximum amount of iterations of the pass over a function)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-gcse-sm": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fgcse-sm",
+        "-fno-gcse-sm"
+      ],
+      "desc": "compiler flag: -fgcse-sm",
+      "sort": 10400,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-reassoc": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-reassoc",
+        "-fno-tree-reassoc"
+      ],
+      "desc": "compiler flag: -ftree-reassoc",
+      "sort": 11700,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-asan-memintrin": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param asan-memintrin=",
+      "explore_start": 0,
+      "explore_stop": 1,
+      "sort": 31880,
+      "desc": "compiler flag: --param asan-memintrin= (Enable asan builtin functions protection)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-auto-inc-dec": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fauto-inc-dec",
+        "-fno-auto-inc-dec"
+      ],
+      "desc": "compiler flag: -fauto-inc-dec",
+      "sort": 10020,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-sel-sched-pipelining": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsel-sched-pipelining",
+        "-fno-sel-sched-pipelining"
+      ],
+      "desc": "compiler flag: -fsel-sched-pipelining",
+      "sort": 11260,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-cxx-max-namespaces-for-diagnostic-help": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param cxx-max-namespaces-for-diagnostic-help=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 31740,
+      "desc": "compiler flag: --param cxx-max-namespaces-for-diagnostic-help= (Maximum number of namespaces to search for alternatives whenname lookup fails)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-sched-critical-path-heuristic": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-critical-path-heuristic",
+        "-fno-sched-critical-path-heuristic"
+      ],
+      "desc": "compiler flag: -fsched-critical-path-heuristic",
+      "sort": 11150,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-lra-max-considered-reload-pseudos": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param lra-max-considered-reload-pseudos=",
+      "explore_start": 0,
+      "explore_stop": 1000,
+      "sort": 31410,
+      "desc": "compiler flag: --param lra-max-considered-reload-pseudos= (The max number of reload pseudos which are considered during spilling a non-reload pseudo)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-peeled-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-peeled-insns=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 30510,
+      "desc": "compiler flag: --param max-peeled-insns= (The maximum number of insns of a peeled loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-ch": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-ch",
+        "-fno-tree-ch"
+      ],
+      "desc": "compiler flag: -ftree-ch",
+      "sort": 11470,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-loop-linear": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-loop-linear",
+        "-fno-tree-loop-linear"
+      ],
+      "desc": "compiler flag: -ftree-loop-linear",
+      "sort": 11640,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-toplevel-reorder": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftoplevel-reorder",
+        "-fno-toplevel-reorder"
+      ],
+      "desc": "compiler flag: -fno-toplevel-reorder",
+      "sort": 10920,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-omega-max-eqs": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param omega-max-eqs=",
+      "explore_start": 0,
+      "explore_stop": 256,
+      "sort": 30930,
+      "desc": "compiler flag: --param omega-max-eqs= (Bound on the number of equalities in Omega constraint systems)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-ssa-phiopt": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fssa-phiopt",
+        "-fno-ssa-phiopt"
+      ],
+      "desc": "compiler flag: -fssa-phiopt",
+      "sort": 11340,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-loop-if-convert": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-loop-if-convert",
+        "-fno-tree-loop-if-convert"
+      ],
+      "desc": "compiler flag: -ftree-loop-if-convert",
+      "sort": 11570,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-ssp-buffer-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ssp-buffer-size=",
+      "explore_start": 0,
+      "explore_stop": 16,
+      "sort": 31230,
+      "desc": "compiler flag: --param ssp-buffer-size= (The lower bound for a buffer to be considered for stack smashing protection)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-live-range-shrinkage": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-flive-range-shrinkage",
+        "-fno-live-range-shrinkage"
+      ],
+      "desc": "compiler flag: -flive-range-shrinkage",
+      "sort": 10640,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-sched-group-heuristic": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-group-heuristic",
+        "-fno-sched-group-heuristic"
+      ],
+      "desc": "compiler flag: -fsched-group-heuristic",
+      "sort": 11140,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-ivopts": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fivopts",
+        "-fno-ivopts"
+      ],
+      "desc": "compiler flag: -fivopts",
+      "sort": 10610,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-omega-hash-table-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param omega-hash-table-size=",
+      "explore_start": 0,
+      "explore_stop": 1100,
+      "sort": 30950,
+      "desc": "compiler flag: --param omega-hash-table-size= (Bound on the size of the hash table in Omega constraint systems)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-large-stack-frame-growth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param large-stack-frame-growth=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 30400,
+      "desc": "compiler flag: --param large-stack-frame-growth= (Maximal stack frame growth due to inlining (in percent))",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-function-sections": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ffunction-sections",
+        "-fno-function-sections"
+      ],
+      "desc": "compiler flag: -ffunction-sections",
+      "sort": 10340,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-cse-skip-blocks": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcse-skip-blocks",
+        "-fno-cse-skip-blocks"
+      ],
+      "desc": "compiler flag: -fcse-skip-blocks",
+      "sort": 10150,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-l1-cache-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param l1-cache-size=",
+      "explore_start": 0,
+      "explore_stop": 128,
+      "sort": 31310,
+      "desc": "compiler flag: --param l1-cache-size= (The size of L1 cache)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param--fsched-stalled-insns[=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-fsched-stalled-insns[=]",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30130,
+      "desc": "compiler flag: -fsched-stalled-insns[=]",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-indirect-inlining": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-findirect-inlining",
+        "-fno-indirect-inlining"
+      ],
+      "desc": "compiler flag: -findirect-inlining",
+      "sort": 10440,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-tail-merge": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-tail-merge",
+        "-fno-tree-tail-merge"
+      ],
+      "desc": "compiler flag: -ftree-tail-merge",
+      "sort": 11750,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-dce": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-dce",
+        "-fno-tree-dce"
+      ],
+      "desc": "compiler flag: -ftree-dce",
+      "sort": 11520,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-crossjumping": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcrossjumping",
+        "-fno-crossjumping"
+      ],
+      "desc": "compiler flag: -fcrossjumping",
+      "sort": 10130,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-unsafe-loop-optimizations": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-funsafe-loop-optimizations",
+        "-fno-unsafe-loop-optimizations"
+      ],
+      "desc": "compiler flag: -funsafe-loop-optimizations",
+      "sort": 11820,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-ipa-max-agg-items": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipa-max-agg-items=",
+      "explore_start": 0,
+      "explore_stop": 32,
+      "sort": 31680,
+      "desc": "compiler flag: --param ipa-max-agg-items= (Maximum number of aggregate content items for a parameter injump functions and lattices)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-completely-peeled-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-completely-peeled-insns=",
+      "explore_start": 0,
+      "explore_stop": 400,
+      "sort": 30540,
+      "desc": "compiler flag: --param max-completely-peeled-insns= (The maximum number of insns of a completely peeled loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-loop-block-tile-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param loop-block-tile-size=",
+      "explore_start": 0,
+      "explore_stop": 102,
+      "sort": 31440,
+      "desc": "compiler flag: --param loop-block-tile-size= (size of tiles for loop blocking)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-inline-insns-recursive-auto": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-inline-insns-recursive-auto=",
+      "explore_start": 0,
+      "explore_stop": 900,
+      "sort": 30200,
+      "desc": "compiler flag: --param max-inline-insns-recursive-auto= (The maximum number of instructions non-inline function can grow to via recursive inlining)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-peel-loops": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fpeel-loops",
+        "-fno-peel-loops"
+      ],
+      "desc": "compiler flag: -fpeel-loops",
+      "sort": 10980,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-devirtualize-speculatively": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fdevirtualize-speculatively",
+        "-fno-devirtualize-speculatively"
+      ],
+      "desc": "compiler flag: -fdevirtualize-speculatively",
+      "sort": 10230,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-ipa-cp-eval-threshold": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipa-cp-eval-threshold=",
+      "explore_start": 0,
+      "explore_stop": 1000,
+      "sort": 31650,
+      "desc": "compiler flag: --param ipa-cp-eval-threshold= (Threshold ipa-cp opportunity evaluation that is still consideredbeneficial to clone.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-tail-merge-comparisons": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-tail-merge-comparisons=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 31790,
+      "desc": "compiler flag: --param max-tail-merge-comparisons= (Maximum amount of similar bbs to compare a bb with)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-zero-initialized-in-bss": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fzero-initialized-in-bss",
+        "-fno-zero-initialized-in-bss"
+      ],
+      "desc": "compiler flag: -fno-zero-initialized-in-bss",
+      "sort": 10940,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-use-canonical-types": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param use-canonical-types=",
+      "explore_start": 0,
+      "explore_stop": 1,
+      "sort": 31340,
+      "desc": "compiler flag: --param use-canonical-types= (Whether to use canonical types)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-builtin-expect-probability": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param builtin-expect-probability=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 30720,
+      "desc": "compiler flag: --param builtin-expect-probability= (Set the estimated probability in percentage for builtin expect. The default value is 90% probability.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-tracer-max-code-growth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param tracer-max-code-growth=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 30750,
+      "desc": "compiler flag: --param tracer-max-code-growth= (Maximal code growth caused by tail duplication (in percent))",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-omega-max-vars": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param omega-max-vars=",
+      "explore_start": 0,
+      "explore_stop": 256,
+      "sort": 30910,
+      "desc": "compiler flag: --param omega-max-vars= (Bound on the number of variables in Omega constraint systems)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-use-linker-plugin": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fuse-linker-plugin",
+        "-fno-use-linker-plugin"
+      ],
+      "desc": "compiler flag: -fuse-linker-plugin",
+      "sort": 11920,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-fields-for-field-sensitive": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-fields-for-field-sensitive=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 31260,
+      "desc": "compiler flag: --param max-fields-for-field-sensitive= (Maximum number of fields in a structure before pointer analysis treats the structure as a single variable)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-ipa-cp-value-list-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipa-cp-value-list-size=",
+      "explore_start": 0,
+      "explore_stop": 16,
+      "sort": 31640,
+      "desc": "compiler flag: --param ipa-cp-value-list-size= (Maximum size of a list of values associated with each parameter forinterprocedural constant propagation)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-min-insn-to-prefetch-ratio": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param min-insn-to-prefetch-ratio=",
+      "explore_start": 0,
+      "explore_stop": 18,
+      "sort": 31540,
+      "desc": "compiler flag: --param min-insn-to-prefetch-ratio= (Min. ratio of insns to prefetches to enable prefetching fora loop with an unknown trip count)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-section-anchors": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsection-anchors",
+        "-fno-section-anchors"
+      ],
+      "desc": "compiler flag: -fsection-anchors",
+      "sort": 11230,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-branch-target-load-optimize": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fbranch-target-load-optimize",
+        "-fno-branch-target-load-optimize"
+      ],
+      "desc": "compiler flag: -fbranch-target-load-optimize",
+      "sort": 10040,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-split-ivs-in-unroller": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsplit-ivs-in-unroller",
+        "-fno-split-ivs-in-unroller"
+      ],
+      "desc": "compiler flag: -fsplit-ivs-in-unroller",
+      "sort": 11320,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-hot-bb-frequency-fraction": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param hot-bb-frequency-fraction=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 30670,
+      "desc": "compiler flag: --param hot-bb-frequency-fraction= (Select fraction of the maximal frequency of executions of basic block in function given basic block needs to have to be considered hot)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-inline-functions": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-finline-functions",
+        "-fno-inline-functions"
+      ],
+      "desc": "compiler flag: -finline-functions",
+      "sort": 10450,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-inline-recursive-depth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-inline-recursive-depth=",
+      "explore_start": 0,
+      "explore_stop": 16,
+      "sort": 30210,
+      "desc": "compiler flag: --param max-inline-recursive-depth= (The maximum depth of recursive inlining for inline functions)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-hot-bb-count-ws-permille": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param hot-bb-count-ws-permille=",
+      "explore_start": 0,
+      "explore_stop": 1000,
+      "sort": 30660,
+      "desc": "compiler flag: --param hot-bb-count-ws-permille= (A basic block profile count is considered hot if it contributes tothe given permillage of the entire profiled execution)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-builtin-call-dce": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-builtin-call-dce",
+        "-fno-tree-builtin-call-dce"
+      ],
+      "desc": "compiler flag: -ftree-builtin-call-dce",
+      "sort": 11450,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-selective-scheduling": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fselective-scheduling",
+        "-fno-selective-scheduling"
+      ],
+      "desc": "compiler flag: -fselective-scheduling",
+      "sort": 11240,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-tree-reassoc-width": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param tree-reassoc-width=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 31780,
+      "desc": "compiler flag: --param tree-reassoc-width= (Set the maximum number of instructions executed in parallel inreassociated tree. If 0, use the target dependent heuristic.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-sched-autopref-queue-depth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sched-autopref-queue-depth=",
+      "explore_start": 0,
+      "explore_stop": -2,
+      "sort": 31190,
+      "desc": "compiler flag: --param sched-autopref-queue-depth= (Hardware autoprefetcher scheduler model control flag.  Number of lookahead cycles the model looks into; at '0' only enable instruction sorting heuristic.  Disabled by default.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-schedule-insns2": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fschedule-insns2",
+        "-fno-schedule-insns2"
+      ],
+      "desc": "compiler flag: -fschedule-insns2",
+      "sort": 11220,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-iv-always-prune-cand-set-bound": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param iv-always-prune-cand-set-bound=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30880,
+      "desc": "compiler flag: --param iv-always-prune-cand-set-bound= (If number of candidates in the set is smaller, we always try to remove unused ivs during its optimization)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-slsr-cand-scan": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-slsr-cand-scan=",
+      "explore_start": 1,
+      "explore_stop": 999999,
+      "sort": 31830,
+      "desc": "compiler flag: --param max-slsr-cand-scan= (Maximum length of candidate scans for straight-linestrength reduction)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-web": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fweb",
+        "-fno-web"
+      ],
+      "desc": "compiler flag: -fweb",
+      "sort": 11890,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-sched-last-insn-heuristic": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-last-insn-heuristic",
+        "-fno-sched-last-insn-heuristic"
+      ],
+      "desc": "compiler flag: -fsched-last-insn-heuristic",
+      "sort": 11180,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-merge-all-constants": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fmerge-all-constants",
+        "-fno-merge-all-constants"
+      ],
+      "desc": "compiler flag: -fmerge-all-constants",
+      "sort": 10760,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-data-sections": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fdata-sections",
+        "-fno-data-sections"
+      ],
+      "desc": "compiler flag: -fdata-sections",
+      "sort": 10180,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-inline-functions-called-once": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-finline-functions-called-once",
+        "-fno-inline-functions-called-once"
+      ],
+      "desc": "compiler flag: -finline-functions-called-once",
+      "sort": 10460,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-ipa-cp-array-index-hint-bonus": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipa-cp-array-index-hint-bonus=",
+      "explore_start": 0,
+      "explore_stop": 96,
+      "sort": 31700,
+      "desc": "compiler flag: --param ipa-cp-array-index-hint-bonus= (Compile-time bonus IPA-CP assigns to candidates which make an arrayindex known.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param--falign-loops[=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-falign-loops[=]",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30040,
+      "desc": "compiler flag: -falign-loops[=]",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-defer-pop": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fdefer-pop",
+        "-fno-defer-pop"
+      ],
+      "desc": "compiler flag: -fno-defer-pop",
+      "sort": 10820,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-gcse-insertion-ratio": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-gcse-insertion-ratio=",
+      "explore_start": 0,
+      "explore_stop": 40,
+      "sort": 30420,
+      "desc": "compiler flag: --param max-gcse-insertion-ratio= (The maximum ratio of insertions to deletions of expressions in GCSE)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-reload-search-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-reload-search-insns=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 31040,
+      "desc": "compiler flag: --param max-reload-search-insns= (The maximum number of instructions to search backward when looking for equivalent reload)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-ipa-cp-clone": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fipa-cp-clone",
+        "-fno-ipa-cp-clone"
+      ],
+      "desc": "compiler flag: -fipa-cp-clone",
+      "sort": 10490,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-ira-loop-reserved-regs": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ira-loop-reserved-regs=",
+      "explore_start": 0,
+      "explore_stop": 4,
+      "sort": 31400,
+      "desc": "compiler flag: --param ira-loop-reserved-regs= (The number of registers in each class kept unused by loop invariant motion)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-if-conversion": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fif-conversion",
+        "-fno-if-conversion"
+      ],
+      "desc": "compiler flag: -fif-conversion",
+      "sort": 10420,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-shrink-wrap": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fshrink-wrap",
+        "-fno-shrink-wrap"
+      ],
+      "desc": "compiler flag: -fshrink-wrap",
+      "sort": 11290,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-combine-stack-adjustments": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcombine-stack-adjustments",
+        "-fno-combine-stack-adjustments"
+      ],
+      "desc": "compiler flag: -fcombine-stack-adjustments",
+      "sort": 10090,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-unroll-all-loops": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-funroll-all-loops",
+        "-fno-unroll-all-loops"
+      ],
+      "desc": "compiler flag: -funroll-all-loops",
+      "sort": 11800,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-gcse-las": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fgcse-las",
+        "-fno-gcse-las"
+      ],
+      "desc": "compiler flag: -fgcse-las",
+      "sort": 10370,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-isolate-erroneous-paths-dereference": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fisolate-erroneous-paths-dereference",
+        "-fno-isolate-erroneous-paths-dereference"
+      ],
+      "desc": "compiler flag: -fisolate-erroneous-paths-dereference",
+      "sort": 10590,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-large-stack-frame": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param large-stack-frame=",
+      "explore_start": 0,
+      "explore_stop": 512,
+      "sort": 30390,
+      "desc": "compiler flag: --param large-stack-frame= (The size of stack frame to be considered large)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-tracer-min-branch-ratio": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param tracer-min-branch-ratio=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 30760,
+      "desc": "compiler flag: --param tracer-min-branch-ratio= (Stop reverse growth if the reverse probability of best edge is less than this threshold (in percent))",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-move-loop-invariants": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fmove-loop-invariants",
+        "-fno-move-loop-invariants"
+      ],
+      "desc": "compiler flag: -fmove-loop-invariants",
+      "sort": 10800,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-omega-eliminate-redundant-constraints": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param omega-eliminate-redundant-constraints=",
+      "explore_start": 0,
+      "explore_stop": 1,
+      "sort": 30970,
+      "desc": "compiler flag: --param omega-eliminate-redundant-constraints= (When set to 1, use expensive methods to eliminate all redundant constraints)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-graphite-max-nb-scop-params": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param graphite-max-nb-scop-params=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 31470,
+      "desc": "compiler flag: --param graphite-max-nb-scop-params= (maximum number of parameters in a SCoP)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-vartrack-expr-depth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-vartrack-expr-depth=",
+      "explore_start": 0,
+      "explore_stop": 24,
+      "sort": 31570,
+      "desc": "compiler flag: --param max-vartrack-expr-depth= (Max. recursion depth for expanding var tracking expressions)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-variable-expansions-in-unroller": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-variable-expansions-in-unroller=",
+      "explore_start": 0,
+      "explore_stop": 2,
+      "sort": 30270,
+      "desc": "compiler flag: --param max-variable-expansions-in-unroller= (If -fvariable-expansion-in-unroller is used, the maximum number of times that an individual variable will be expanded during loop unrolling)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-graphite-max-bbs-per-function": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param graphite-max-bbs-per-function=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 31480,
+      "desc": "compiler flag: --param graphite-max-bbs-per-function= (maximum number of basic blocks per function to be analyzed by Graphite)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-switch-conversion-max-branch-ratio": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param switch-conversion-max-branch-ratio=",
+      "explore_start": 0,
+      "explore_stop": 16,
+      "sort": 31430,
+      "desc": "compiler flag: --param switch-conversion-max-branch-ratio= (The maximum ratio between array size and switch branches fora switch conversion to take place)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-inline-insns-single": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-inline-insns-single=",
+      "explore_start": 0,
+      "explore_stop": 800,
+      "sort": 30170,
+      "desc": "compiler flag: --param max-inline-insns-single= (The maximum number of instructions in a single function eligible for inlining)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-asan-use-after-return": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param asan-use-after-return=",
+      "explore_start": 0,
+      "explore_stop": 1,
+      "sort": 31890,
+      "desc": "compiler flag: --param asan-use-after-return= (Enable asan detection of use-after-return bugs)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-ter": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-ter",
+        "-fno-tree-ter"
+      ],
+      "desc": "compiler flag: -ftree-ter",
+      "sort": 11760,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-comdat-sharing-probability": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param comdat-sharing-probability=",
+      "explore_start": 0,
+      "explore_stop": 40,
+      "sort": 30250,
+      "desc": "compiler flag: --param comdat-sharing-probability= (Probability that COMDAT function will be shared with different compilation unit)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-tm-max-aggregate-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param tm-max-aggregate-size=",
+      "explore_start": 0,
+      "explore_stop": 18,
+      "sort": 31610,
+      "desc": "compiler flag: --param tm-max-aggregate-size= (Size in bytes after which thread-local aggregates should beinstrumented with the logging functions instead of save/restorepairs)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-sched-spec-insn-heuristic": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-spec-insn-heuristic",
+        "-fno-sched-spec-insn-heuristic"
+      ],
+      "desc": "compiler flag: -fsched-spec-insn-heuristic",
+      "sort": 11160,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-delayed-branch": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fdelayed-branch",
+        "-fno-delayed-branch"
+      ],
+      "desc": "compiler flag: -fdelayed-branch",
+      "sort": 10200,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-loop-unroll-and-jam": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-floop-unroll-and-jam",
+        "-fno-loop-unroll-and-jam"
+      ],
+      "desc": "compiler flag: -floop-unroll-and-jam",
+      "sort": 10680,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-combine-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-combine-insns=",
+      "explore_start": 2,
+      "explore_stop": 4,
+      "sort": 31210,
+      "desc": "compiler flag: --param max-combine-insns= (The maximum number of insns combine tries to combine)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-loop-nest-optimize": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-floop-nest-optimize",
+        "-fno-loop-nest-optimize"
+      ],
+      "desc": "compiler flag: -floop-nest-optimize",
+      "sort": 10690,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-keep-static-consts": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fkeep-static-consts",
+        "-fno-keep-static-consts"
+      ],
+      "desc": "compiler flag: -fkeep-static-consts",
+      "sort": 10630,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-ipa-ra": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fipa-ra",
+        "-fno-ipa-ra"
+      ],
+      "desc": "compiler flag: -fipa-ra",
+      "sort": 11850,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param--fira-algorithm=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-fira-algorithm=@var{algorithm}",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30080,
+      "desc": "compiler flag: -fira-algorithm=@var{algorithm}",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-omega-max-keys": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param omega-max-keys=",
+      "explore_start": 0,
+      "explore_stop": 1000,
+      "sort": 30960,
+      "desc": "compiler flag: --param omega-max-keys= (Bound on the number of keys in Omega constraint systems)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-dse": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fdse",
+        "-fno-dse"
+      ],
+      "desc": "compiler flag: -fdse",
+      "sort": 10250,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-sink": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-sink",
+        "-fno-tree-sink"
+      ],
+      "desc": "compiler flag: -ftree-sink",
+      "sort": 11710,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-lto": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-flto",
+        "-fno-lto"
+      ],
+      "desc": "compiler flag: -flto",
+      "sort": 10720,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-average-unrolled-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-average-unrolled-insns=",
+      "explore_start": 0,
+      "explore_stop": 160,
+      "sort": 30490,
+      "desc": "compiler flag: --param max-average-unrolled-insns= (The maximum number of instructions to consider to unroll in a loop on average)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-sms-dfa-history": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sms-dfa-history=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30640,
+      "desc": "compiler flag: --param sms-dfa-history= (The number of cycles the swing modulo scheduler considers when checking conflicts using DFA)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-sched-dep-count-heuristic": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-dep-count-heuristic",
+        "-fno-sched-dep-count-heuristic"
+      ],
+      "desc": "compiler flag: -fsched-dep-count-heuristic",
+      "sort": 11190,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-branch-count-reg": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fbranch-count-reg",
+        "-fno-branch-count-reg"
+      ],
+      "desc": "compiler flag: -fno-branch-count-reg",
+      "sort": 10810,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-lra-remat": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-flra-remat",
+        "-fno-lra-remat"
+      ],
+      "desc": "compiler flag: -flra-remat",
+      "sort": 10710,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-cprop-registers": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcprop-registers",
+        "-fno-cprop-registers"
+      ],
+      "desc": "compiler flag: -fcprop-registers",
+      "sort": 10120,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-ipa-cp-loop-hint-bonus": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipa-cp-loop-hint-bonus=",
+      "explore_start": 0,
+      "explore_stop": 128,
+      "sort": 31690,
+      "desc": "compiler flag: --param ipa-cp-loop-hint-bonus= (Compile-time bonus IPA-CP assigns to candidates which make loopbounds or strides known.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-lto-partitions": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param lto-partitions=",
+      "explore_start": 0,
+      "explore_stop": 64,
+      "sort": 31720,
+      "desc": "compiler flag: --param lto-partitions= (Number of partitions the program should be split to)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-float-store": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ffloat-store",
+        "-fno-float-store"
+      ],
+      "desc": "compiler flag: -ffloat-store",
+      "sort": 10320,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-predictive-commoning": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fpredictive-commoning",
+        "-fno-predictive-commoning"
+      ],
+      "desc": "compiler flag: -fpredictive-commoning",
+      "sort": 10990,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-inline-insns-recursive": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-inline-insns-recursive=",
+      "explore_start": 0,
+      "explore_stop": 900,
+      "sort": 30190,
+      "desc": "compiler flag: --param max-inline-insns-recursive= (The maximum number of instructions inline function can grow to via recursive inlining)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-delay-slot-insn-search": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-delay-slot-insn-search=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 30290,
+      "desc": "compiler flag: --param max-delay-slot-insn-search= (The maximum number of instructions to consider to fill a delay slot)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-ipa-cp-recursion-penalty": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipa-cp-recursion-penalty=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 31660,
+      "desc": "compiler flag: --param ipa-cp-recursion-penalty= (Percentage penalty the recursive functions will receive when theyare evaluated for cloning.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-sra-max-scalarization-size-Ospeed": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sra-max-scalarization-size-Ospeed=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 31620,
+      "desc": "compiler flag: --param sra-max-scalarization-size-Ospeed= (Maximum size, in storage units, of an aggregate which should beconsidered for scalarization when compiling for speed)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-ira-max-conflict-table-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ira-max-conflict-table-size=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 31390,
+      "desc": "compiler flag: --param ira-max-conflict-table-size= (Max size of conflict table in MB)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-vect-max-version-for-alignment-checks": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param vect-max-version-for-alignment-checks=",
+      "explore_start": 0,
+      "explore_stop": 12,
+      "sort": 30980,
+      "desc": "compiler flag: --param vect-max-version-for-alignment-checks= (Bound on number of runtime checks inserted by the vectorizer's loop versioning for alignment check)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-partial-antic-length": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-partial-antic-length=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 31350,
+      "desc": "compiler flag: --param max-partial-antic-length= (Maximum length of partial antic set when performing tree pre optimization)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-signed-zeros": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsigned-zeros",
+        "-fno-signed-zeros"
+      ],
+      "desc": "compiler flag: -fno-signed-zeros",
+      "sort": 10910,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-gcse": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fgcse",
+        "-fno-gcse"
+      ],
+      "desc": "compiler flag: -fgcse",
+      "sort": 10350,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param--fira-verbose=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-fira-verbose=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30100,
+      "desc": "compiler flag: -fira-verbose=",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-min-spec-prob": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param min-spec-prob=",
+      "explore_start": 0,
+      "explore_stop": 80,
+      "sort": 31100,
+      "desc": "compiler flag: --param min-spec-prob= (The minimum probability of reaching a source block for interblock speculative scheduling)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-wpa": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fwpa",
+        "-fno-wpa"
+      ],
+      "desc": "compiler flag: -fwpa",
+      "sort": 11910,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-vpt": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fvpt",
+        "-fno-vpt"
+      ],
+      "desc": "compiler flag: -fvpt",
+      "sort": 11880,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-sched-interblock": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-interblock",
+        "-fno-sched-interblock"
+      ],
+      "desc": "compiler flag: -fno-sched-interblock",
+      "sort": 10890,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-ira-max-loops-num": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ira-max-loops-num=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 31380,
+      "desc": "compiler flag: --param ira-max-loops-num= (Max loops number for regional RA)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-peel-branches": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-peel-branches=",
+      "explore_start": 0,
+      "explore_stop": 64,
+      "sort": 30530,
+      "desc": "compiler flag: --param max-peel-branches= (The maximum number of branches on the path through the peeled sequence)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-if-conversion2": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fif-conversion2",
+        "-fno-if-conversion2"
+      ],
+      "desc": "compiler flag: -fif-conversion2",
+      "sort": 10430,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-gcse-after-reload-critical-fraction": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param gcse-after-reload-critical-fraction=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30440,
+      "desc": "compiler flag: --param gcse-after-reload-critical-fraction= (The threshold ratio of critical edges execution count that permit performing redundancy elimination after reload)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-delay-slot-live-search": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-delay-slot-live-search=",
+      "explore_start": 0,
+      "explore_stop": 666,
+      "sort": 30300,
+      "desc": "compiler flag: --param max-delay-slot-live-search= (The maximum number of instructions to consider to find accurate live register information)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-ipa-pure-const": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fipa-pure-const",
+        "-fno-ipa-pure-const"
+      ],
+      "desc": "compiler flag: -fipa-pure-const",
+      "sort": 10520,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-loop-interchange": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-floop-interchange",
+        "-fno-loop-interchange"
+      ],
+      "desc": "compiler flag: -floop-interchange",
+      "sort": 10660,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param--ffp-contract=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-ffp-contract=@var{style}",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30060,
+      "desc": "compiler flag: -ffp-contract=@var{style}",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-split-wide-types": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsplit-wide-types",
+        "-fno-split-wide-types"
+      ],
+      "desc": "compiler flag: -fsplit-wide-types",
+      "sort": 11330,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-cselib-memory-locations": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-cselib-memory-locations=",
+      "explore_start": 0,
+      "explore_stop": 1000,
+      "sort": 31010,
+      "desc": "compiler flag: --param max-cselib-memory-locations= (The maximum memory locations recorded by cselib)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-modulo-sched-allow-regmoves": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fmodulo-sched-allow-regmoves",
+        "-fno-modulo-sched-allow-regmoves"
+      ],
+      "desc": "compiler flag: -fmodulo-sched-allow-regmoves",
+      "sort": 10790,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##dataset_file": {
+      "tags": [
+        "setup"
+      ],
+      "has_choice": "yes",
+      "sort": 1100,
+      "choices": [
+        "SGEMM_NT_1x1.json",
+        "SGEMM_NT_4x1.json",
+        "SGEMM_NT_4x1_barrier.json"
+      ],
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-coalesce-vars": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-coalesce-vars",
+        "-fno-tree-coalesce-vars"
+      ],
+      "desc": "compiler flag: -ftree-coalesce-vars",
+      "sort": 11490,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-ipa-pta": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fipa-pta",
+        "-fno-ipa-pta"
+      ],
+      "desc": "compiler flag: -fipa-pta",
+      "sort": 10510,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-simultaneous-prefetches": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param simultaneous-prefetches=",
+      "explore_start": 0,
+      "explore_stop": 6,
+      "sort": 31300,
+      "desc": "compiler flag: --param simultaneous-prefetches= (The number of prefetches that can run at the same time)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-copyrename": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-copyrename",
+        "-fno-tree-copyrename"
+      ],
+      "desc": "compiler flag: -ftree-copyrename",
+      "sort": 11510,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-unswitch-level": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-unswitch-level=",
+      "explore_start": 0,
+      "explore_stop": 6,
+      "sort": 30590,
+      "desc": "compiler flag: --param max-unswitch-level= (The maximum number of unswitchings in a single loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-sched-region-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-sched-region-insns=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 31070,
+      "desc": "compiler flag: --param max-sched-region-insns= (The maximum number of insns in a region to be considered for interblock scheduling)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-vartrack-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-vartrack-size=",
+      "explore_start": 0,
+      "explore_stop": 100000000,
+      "sort": 31560,
+      "desc": "compiler flag: --param max-vartrack-size= (Max. size of var tracking hash tables)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-reorder-functions": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-freorder-functions",
+        "-fno-reorder-functions"
+      ],
+      "desc": "compiler flag: -freorder-functions",
+      "sort": 11060,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-ipa-cp": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fipa-cp",
+        "-fno-ipa-cp"
+      ],
+      "desc": "compiler flag: -fipa-cp",
+      "sort": 10480,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-compare-elim": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcompare-elim",
+        "-fno-compare-elim"
+      ],
+      "desc": "compiler flag: -fcompare-elim",
+      "sort": 10110,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-ira-hoist-pressure": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fira-hoist-pressure",
+        "-fno-ira-hoist-pressure"
+      ],
+      "desc": "compiler flag: -fira-hoist-pressure",
+      "sort": 10550,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-iterations-to-track": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-iterations-to-track=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 30600,
+      "desc": "compiler flag: --param max-iterations-to-track= (Bound on the number of iterations the brute force # of iterations analysis algorithm evaluates)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-vect-max-version-for-alias-checks": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param vect-max-version-for-alias-checks=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30990,
+      "desc": "compiler flag: --param vect-max-version-for-alias-checks= (Bound on number of runtime checks inserted by the vectorizer's loop versioning for alias check)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-crossjump-edges": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-crossjump-edges=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 30790,
+      "desc": "compiler flag: --param max-crossjump-edges= (The maximum number of incoming edges to consider for crossjumping)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-inline-unit-growth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param inline-unit-growth=",
+      "explore_start": 0,
+      "explore_stop": 40,
+      "sort": 30360,
+      "desc": "compiler flag: --param inline-unit-growth= (How much can given compilation unit grow because of the inlining (in percent))",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-selsched-insns-to-rename": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param selsched-insns-to-rename=",
+      "explore_start": 0,
+      "explore_stop": 4,
+      "sort": 31170,
+      "desc": "compiler flag: --param selsched-insns-to-rename= (Maximum number of instructions in the ready list that are considered eligible for renaming)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-ccp": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-ccp",
+        "-fno-tree-ccp"
+      ],
+      "desc": "compiler flag: -ftree-ccp",
+      "sort": 11460,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-sched-mem-true-dep-cost": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sched-mem-true-dep-cost=",
+      "explore_start": 0,
+      "explore_stop": 2,
+      "sort": 31180,
+      "desc": "compiler flag: --param sched-mem-true-dep-cost= (Minimal distance between possibly conflicting store and load)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-fast-math": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ffast-math",
+        "-fno-fast-math"
+      ],
+      "desc": "compiler flag: -ffast-math",
+      "sort": 10300,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-cx-fortran-rules": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcx-fortran-rules",
+        "-fno-cx-fortran-rules"
+      ],
+      "desc": "compiler flag: -fcx-fortran-rules",
+      "sort": 10160,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-omit-frame-pointer": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fomit-frame-pointer",
+        "-fno-omit-frame-pointer"
+      ],
+      "desc": "compiler flag: -fomit-frame-pointer",
+      "sort": 10950,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-sms-loop-average-count-threshold": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sms-loop-average-count-threshold=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30650,
+      "desc": "compiler flag: --param sms-loop-average-count-threshold= (A threshold on the average loop count considered by the swing modulo scheduler)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-sched-pressure": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-pressure",
+        "-fno-sched-pressure"
+      ],
+      "desc": "compiler flag: -fsched-pressure",
+      "sort": 11110,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-function-cse": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ffunction-cse",
+        "-fno-function-cse"
+      ],
+      "desc": "compiler flag: -fno-function-cse",
+      "sort": 10830,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-ipa-reference": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fipa-reference",
+        "-fno-ipa-reference"
+      ],
+      "desc": "compiler flag: -fipa-reference",
+      "sort": 10530,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-rounding-math": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-frounding-math",
+        "-fno-rounding-math"
+      ],
+      "desc": "compiler flag: -frounding-math",
+      "sort": 11090,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-keep-inline-functions": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fkeep-inline-functions",
+        "-fno-keep-inline-functions"
+      ],
+      "desc": "compiler flag: -fkeep-inline-functions",
+      "sort": 10620,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-partial-inlining-entry-probability": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param partial-inlining-entry-probability=",
+      "explore_start": 0,
+      "explore_stop": 140,
+      "sort": 30260,
+      "desc": "compiler flag: --param partial-inlining-entry-probability= (Maximum probability of the entry BB of split region (in percent relative to entry BB of the function) to make partial inlining happen)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-strict-overflow": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fstrict-overflow",
+        "-fno-strict-overflow"
+      ],
+      "desc": "compiler flag: -fstrict-overflow",
+      "sort": 11410,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-check-data-deps": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcheck-data-deps",
+        "-fno-check-data-deps"
+      ],
+      "desc": "compiler flag: -fcheck-data-deps",
+      "sort": 10080,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-align-threshold": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param align-threshold=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 30690,
+      "desc": "compiler flag: --param align-threshold= (Select fraction of the maximal frequency of executions of basic block in function given basic block get alignment)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-signaling-nans": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsignaling-nans",
+        "-fno-signaling-nans"
+      ],
+      "desc": "compiler flag: -fsignaling-nans",
+      "sort": 11300,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-reciprocal-math": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-freciprocal-math",
+        "-fno-reciprocal-math"
+      ],
+      "desc": "compiler flag: -freciprocal-math",
+      "sort": 11010,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-chkp-max-ctor-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param chkp-max-ctor-size=",
+      "explore_start": 0,
+      "explore_stop": 10000,
+      "sort": 31920,
+      "desc": "compiler flag: --param chkp-max-ctor-size= (Maximum number of statements to be included into a single staticconstructor generated by Pointer Bounds Checker)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-tracked-strlens": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-tracked-strlens=",
+      "explore_start": 0,
+      "explore_stop": 20000,
+      "sort": 31810,
+      "desc": "compiler flag: --param max-tracked-strlens= (Maximum number of strings for which strlen optimization pass willtrack string lengths)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-caller-saves": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fcaller-saves",
+        "-fno-caller-saves"
+      ],
+      "desc": "compiler flag: -fcaller-saves",
+      "sort": 10070,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-grow-copy-bb-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-grow-copy-bb-insns=",
+      "explore_start": 0,
+      "explore_stop": 16,
+      "sort": 30810,
+      "desc": "compiler flag: --param max-grow-copy-bb-insns= (The maximum expansion factor when copying basic blocks)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-last-value-rtl": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-last-value-rtl=",
+      "explore_start": 0,
+      "explore_stop": 20000,
+      "sort": 31200,
+      "desc": "compiler flag: --param max-last-value-rtl= (The maximum number of RTL nodes that can be recorded as combiner's last value)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-vect-max-peeling-for-alignment": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param vect-max-peeling-for-alignment=",
+      "explore_start": -1,
+      "explore_stop": 64,
+      "sort": 31000,
+      "desc": "compiler flag: --param vect-max-peeling-for-alignment= (Max number of loop peels to enhancement alignment of data references in a loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-vartrack-reverse-op-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-vartrack-reverse-op-size=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 31580,
+      "desc": "compiler flag: --param max-vartrack-reverse-op-size= (Max. size of loc list for which reverse ops should be added)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-sel-sched-pipelining-outer-loops": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsel-sched-pipelining-outer-loops",
+        "-fno-sel-sched-pipelining-outer-loops"
+      ],
+      "desc": "compiler flag: -fsel-sched-pipelining-outer-loops",
+      "sort": 11270,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-sched-region-blocks": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-sched-region-blocks=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 31060,
+      "desc": "compiler flag: --param max-sched-region-blocks= (The maximum number of blocks in a region to be considered for interblock scheduling)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-hoist-depth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-hoist-depth=",
+      "explore_start": 0,
+      "explore_stop": 60,
+      "sort": 30470,
+      "desc": "compiler flag: --param max-hoist-depth= (Maximum depth of search in the dominator tree for expressions to hoist)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-unsafe-math-optimizations": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-funsafe-math-optimizations",
+        "-fno-unsafe-math-optimizations"
+      ],
+      "desc": "compiler flag: -funsafe-math-optimizations",
+      "sort": 11830,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-unswitch-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-unswitch-insns=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 30580,
+      "desc": "compiler flag: --param max-unswitch-insns= (The maximum number of insns of an unswitched loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-hoist-adjacent-loads": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fhoist-adjacent-loads",
+        "-fno-hoist-adjacent-loads"
+      ],
+      "desc": "compiler flag: -fhoist-adjacent-loads",
+      "sort": 10410,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-stdarg-opt": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fstdarg-opt",
+        "-fno-stdarg-opt"
+      ],
+      "desc": "compiler flag: -fstdarg-opt",
+      "sort": 11390,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-iv-max-considered-uses": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param iv-max-considered-uses=",
+      "explore_start": 0,
+      "explore_stop": 500,
+      "sort": 30870,
+      "desc": "compiler flag: --param iv-max-considered-uses= (Bound on number of iv uses in loop optimized in iv optimizations)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-merge-constants": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fmerge-constants",
+        "-fno-merge-constants"
+      ],
+      "desc": "compiler flag: -fmerge-constants",
+      "sort": 10770,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-gcse-cost-distance-ratio": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param gcse-cost-distance-ratio=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30450,
+      "desc": "compiler flag: --param gcse-cost-distance-ratio= (Scaling factor in calculation of maximum distance an expression can be moved by GCSE optimizations)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-graphite-identity": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fgraphite-identity",
+        "-fno-graphite-identity"
+      ],
+      "desc": "compiler flag: -fgraphite-identity",
+      "sort": 10390,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-lra-inheritance-ebb-probability-cutoff": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param lra-inheritance-ebb-probability-cutoff=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 31420,
+      "desc": "compiler flag: --param lra-inheritance-ebb-probability-cutoff= (Minimal fall-through edge probability in percentage used to add BB to inheritance EBB in LRA)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param--fexcess-precision=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-fexcess-precision=@var{style}",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30050,
+      "desc": "compiler flag: -fexcess-precision=@var{style}",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-case-values-threshold": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param case-values-threshold=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 31760,
+      "desc": "compiler flag: --param case-values-threshold= (The smallest number of different values for which it is best touse a jump-table instead of a tree of conditional branches,if 0, use the default for the machine)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-fat-lto-objects": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ffat-lto-objects",
+        "-fno-fat-lto-objects"
+      ],
+      "desc": "compiler flag: -ffat-lto-objects",
+      "sort": 10290,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-partial-inlining": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fpartial-inlining",
+        "-fno-partial-inlining"
+      ],
+      "desc": "compiler flag: -fpartial-inlining",
+      "sort": 10970,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-unlikely-bb-count-fraction": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param unlikely-bb-count-fraction=",
+      "explore_start": 1,
+      "explore_stop": 10000,
+      "sort": 30680,
+      "desc": "compiler flag: --param unlikely-bb-count-fraction= (The minimum fraction of profile runs a given basic block execution count must be not to be considered unlikely)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-loop-max-datarefs-for-datadeps": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param loop-max-datarefs-for-datadeps=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 31490,
+      "desc": "compiler flag: --param loop-max-datarefs-for-datadeps= (Maximum number of datarefs in loop for building loop data dependencies)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-cse-path-length": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-cse-path-length=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30830,
+      "desc": "compiler flag: --param max-cse-path-length= (The maximum length of path considered in cse)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-allow-store-data-races": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param allow-store-data-races=",
+      "explore_start": 0,
+      "explore_stop": 1,
+      "sort": 31770,
+      "desc": "compiler flag: --param allow-store-data-races= (Allow new data races on stores to be introduced)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-sched-pressure-algorithm": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sched-pressure-algorithm=",
+      "explore_start": 1,
+      "explore_stop": 2,
+      "sort": 31820,
+      "desc": "compiler flag: --param sched-pressure-algorithm= (Which -fsched-pressure algorithm to apply)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-ira-loop-pressure": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fira-loop-pressure",
+        "-fno-ira-loop-pressure"
+      ],
+      "desc": "compiler flag: -fira-loop-pressure",
+      "sort": 10560,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param--falign-labels[=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-falign-labels[=]",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30030,
+      "desc": "compiler flag: -falign-labels[=]",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-sched-spec-load-dangerous": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-spec-load-dangerous",
+        "-fno-sched-spec-load-dangerous"
+      ],
+      "desc": "compiler flag: -fsched-spec-load-dangerous",
+      "sort": 11130,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-semantic-interposition": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsemantic-interposition",
+        "-fno-semantic-interposition"
+      ],
+      "desc": "compiler flag: -fsemantic-interposition",
+      "sort": 11280,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-variable-expansion-in-unroller": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fvariable-expansion-in-unroller",
+        "-fno-variable-expansion-in-unroller"
+      ],
+      "desc": "compiler flag: -fvariable-expansion-in-unroller",
+      "sort": 11860,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-expensive-optimizations": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fexpensive-optimizations",
+        "-fno-expensive-optimizations"
+      ],
+      "desc": "compiler flag: -fexpensive-optimizations",
+      "sort": 10280,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-min-crossjump-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param min-crossjump-insns=",
+      "explore_start": 0,
+      "explore_stop": 10,
+      "sort": 30800,
+      "desc": "compiler flag: --param min-crossjump-insns= (The minimum number of matching instructions to consider for crossjumping)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-ree": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-free",
+        "-fno-ree"
+      ],
+      "desc": "compiler flag: -free",
+      "sort": 11020,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-loop-strip-mine": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-floop-strip-mine",
+        "-fno-loop-strip-mine"
+      ],
+      "desc": "compiler flag: -floop-strip-mine",
+      "sort": 10670,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-early-inliner-iterations": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-early-inliner-iterations=",
+      "explore_start": 0,
+      "explore_stop": 2,
+      "sort": 30240,
+      "desc": "compiler flag: --param max-early-inliner-iterations= (The maximum number of nested indirect inlining performed by early inliner)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-unroll-loops": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-funroll-loops",
+        "-fno-unroll-loops"
+      ],
+      "desc": "compiler flag: -funroll-loops",
+      "sort": 11810,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-loop-if-convert-stores": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-loop-if-convert-stores",
+        "-fno-tree-loop-if-convert-stores"
+      ],
+      "desc": "compiler flag: -ftree-loop-if-convert-stores",
+      "sort": 11580,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-prefetch-min-insn-to-mem-ratio": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param prefetch-min-insn-to-mem-ratio=",
+      "explore_start": 0,
+      "explore_stop": 6,
+      "sort": 31550,
+      "desc": "compiler flag: --param prefetch-min-insn-to-mem-ratio= (Min. ratio of insns to mem ops to enable prefetching in a loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-predicted-iterations": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-predicted-iterations=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 30710,
+      "desc": "compiler flag: --param max-predicted-iterations= (The maximum number of loop iterations we predict statically)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-whole-program": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fwhole-program",
+        "-fno-whole-program"
+      ],
+      "desc": "compiler flag: -fwhole-program",
+      "sort": 11900,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param--ftree-parallelize-loops=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-ftree-parallelize-loops=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30140,
+      "desc": "compiler flag: -ftree-parallelize-loops=",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-min-nondebug-insn-uid": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param min-nondebug-insn-uid=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 31590,
+      "desc": "compiler flag: --param min-nondebug-insn-uid= (The minimum UID to be used for a nondebug insn)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-fre": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-fre",
+        "-fno-tree-fre"
+      ],
+      "desc": "compiler flag: -ftree-fre",
+      "sort": 11560,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param--flto-partition=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-flto-partition=@var{alg}",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30110,
+      "desc": "compiler flag: -flto-partition=@var{alg}",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-fsm-thread-paths": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-fsm-thread-paths=",
+      "explore_start": 1,
+      "explore_stop": 999999,
+      "sort": 31950,
+      "desc": "compiler flag: --param max-fsm-thread-paths= (Maximum number of new jump thread paths to create for a finite state automaton)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-vrp": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-vrp",
+        "-fno-tree-vrp"
+      ],
+      "desc": "compiler flag: -ftree-vrp",
+      "sort": 11780,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-dominator-opts": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-dominator-opts",
+        "-fno-tree-dominator-opts"
+      ],
+      "desc": "compiler flag: -ftree-dominator-opts",
+      "sort": 11530,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-reorder-blocks-and-partition": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-freorder-blocks-and-partition",
+        "-fno-reorder-blocks-and-partition"
+      ],
+      "desc": "compiler flag: -freorder-blocks-and-partition",
+      "sort": 11050,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-loop-optimize": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-loop-optimize",
+        "-fno-tree-loop-optimize"
+      ],
+      "desc": "compiler flag: -ftree-loop-optimize",
+      "sort": 11650,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-ipa-max-aa-steps": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipa-max-aa-steps=",
+      "explore_start": 0,
+      "explore_stop": 50000,
+      "sort": 31710,
+      "desc": "compiler flag: --param ipa-max-aa-steps= (Maximum number of statements that will be visited by IPA formalparameter analysis based on alias analysis in any given function)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-early-inlining-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param early-inlining-insns=",
+      "explore_start": 0,
+      "explore_stop": 28,
+      "sort": 30380,
+      "desc": "compiler flag: --param early-inlining-insns= (Maximal estimated growth of function body caused by early inlining of single call)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param--falign-jumps[=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-falign-jumps[=]",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30020,
+      "desc": "compiler flag: -falign-jumps[=]",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-delete-null-pointer-checks": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fdelete-null-pointer-checks",
+        "-fno-delete-null-pointer-checks"
+      ],
+      "desc": "compiler flag: -fdelete-null-pointer-checks",
+      "sort": 10210,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-asan-globals": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param asan-globals=",
+      "explore_start": 0,
+      "explore_stop": 1,
+      "sort": 31850,
+      "desc": "compiler flag: --param asan-globals= (Enable asan globals protection)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-large-function-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param large-function-insns=",
+      "explore_start": 0,
+      "explore_stop": 5400,
+      "sort": 30330,
+      "desc": "compiler flag: --param large-function-insns= (The size of function body to be considered large)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-sms-max-ii-factor": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sms-max-ii-factor=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 30620,
+      "desc": "compiler flag: --param sms-max-ii-factor= (A factor for tuning the upper bound that swing modulo scheduler uses for scheduling a loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-fsm-thread-path-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-fsm-thread-path-insns=",
+      "explore_start": 1,
+      "explore_stop": 999999,
+      "sort": 31930,
+      "desc": "compiler flag: --param max-fsm-thread-path-insns= (Maximum number of instructions to copy when duplicating blocks on a finite state automaton jump thread path)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-min-vect-loop-bound": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param min-vect-loop-bound=",
+      "explore_start": 0,
+      "explore_stop": 2,
+      "sort": 30280,
+      "desc": "compiler flag: --param min-vect-loop-bound= (If -ftree-vectorize is used, the minimal loop bound of a loop to be considered for vectorization)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-loop-ivcanon": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-loop-ivcanon",
+        "-fno-tree-loop-ivcanon"
+      ],
+      "desc": "compiler flag: -ftree-loop-ivcanon",
+      "sort": 11630,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-predictable-branch-outcome": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param predictable-branch-outcome=",
+      "explore_start": 0,
+      "explore_stop": 50,
+      "sort": 30150,
+      "desc": "compiler flag: --param predictable-branch-outcome= (Maximal estimated outcome of branch considered predictable)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-sched2-use-superblocks": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched2-use-superblocks",
+        "-fno-sched2-use-superblocks"
+      ],
+      "desc": "compiler flag: -fsched2-use-superblocks",
+      "sort": 11100,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-pipeline-region-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-pipeline-region-insns=",
+      "explore_start": 0,
+      "explore_stop": 400,
+      "sort": 31090,
+      "desc": "compiler flag: --param max-pipeline-region-insns= (The maximum number of insns in a region to be considered for interblock scheduling)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-pipeline-region-blocks": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-pipeline-region-blocks=",
+      "explore_start": 0,
+      "explore_stop": 30,
+      "sort": 31080,
+      "desc": "compiler flag: --param max-pipeline-region-blocks= (The maximum number of blocks in a region to be considered for interblock scheduling)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tracer": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftracer",
+        "-fno-tracer"
+      ],
+      "desc": "compiler flag: -ftracer",
+      "sort": 11430,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-sra-max-scalarization-size-Osize": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sra-max-scalarization-size-Osize=",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 31630,
+      "desc": "compiler flag: --param sra-max-scalarization-size-Osize= (Maximum size, in storage units, of an aggregate which should beconsidered for scalarization when compiling for size)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-peephole2": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fpeephole2",
+        "-fno-peephole2"
+      ],
+      "desc": "compiler flag: -fno-peephole2",
+      "sort": 10880,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-single-precision-constant": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsingle-precision-constant",
+        "-fno-single-precision-constant"
+      ],
+      "desc": "compiler flag: -fsingle-precision-constant",
+      "sort": 11310,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-sccvn-max-alias-queries-per-access": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sccvn-max-alias-queries-per-access=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 31370,
+      "desc": "compiler flag: --param sccvn-max-alias-queries-per-access= (Maximum number of disambiguations to perform per memory access)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-devirtualize-at-ltrans": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fdevirtualize-at-ltrans",
+        "-fno-devirtualize-at-ltrans"
+      ],
+      "desc": "compiler flag: -fdevirtualize-at-ltrans",
+      "sort": 10240,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-unroll-times": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-unroll-times=",
+      "explore_start": 0,
+      "explore_stop": 16,
+      "sort": 30500,
+      "desc": "compiler flag: --param max-unroll-times= (The maximum number of unrollings of a single loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-min-size-for-stack-sharing": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param min-size-for-stack-sharing=",
+      "explore_start": 0,
+      "explore_stop": 64,
+      "sort": 31240,
+      "desc": "compiler flag: --param min-size-for-stack-sharing= (The minimum size of variables taking part in stack slot sharingwhen not optimizing)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-ipcp-unit-growth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipcp-unit-growth=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30370,
+      "desc": "compiler flag: --param ipcp-unit-growth= (How much can given compilation unit grow because of the interprocedural constant propagation (in percent))",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-schedule-fusion": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fschedule-fusion",
+        "-fno-schedule-fusion"
+      ],
+      "desc": "compiler flag: -fschedule-fusion",
+      "sort": 11200,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-modulo-sched": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fmodulo-sched",
+        "-fno-modulo-sched"
+      ],
+      "desc": "compiler flag: -fmodulo-sched",
+      "sort": 10780,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-l2-cache-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param l2-cache-size=",
+      "explore_start": 0,
+      "explore_stop": 1024,
+      "sort": 31330,
+      "desc": "compiler flag: --param l2-cache-size= (The size of L2 cache)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-asan-instrument-reads": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param asan-instrument-reads=",
+      "explore_start": 0,
+      "explore_stop": 1,
+      "sort": 31870,
+      "desc": "compiler flag: --param asan-instrument-reads= (Enable asan load operations protection)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-inline-recursive-depth-auto": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-inline-recursive-depth-auto=",
+      "explore_start": 0,
+      "explore_stop": 16,
+      "sort": 30220,
+      "desc": "compiler flag: --param max-inline-recursive-depth-auto= (The maximum depth of recursive inlining for non-inline functions)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-unrolled-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-unrolled-insns=",
+      "explore_start": 0,
+      "explore_stop": 400,
+      "sort": 30480,
+      "desc": "compiler flag: --param max-unrolled-insns= (The maximum number of instructions to consider to unroll in a loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-goto-duplication-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-goto-duplication-insns=",
+      "explore_start": 0,
+      "explore_stop": 16,
+      "sort": 30820,
+      "desc": "compiler flag: --param max-goto-duplication-insns= (The maximum number of insns to duplicate when unfactoring computed gotos)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-large-function-growth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param large-function-growth=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 30340,
+      "desc": "compiler flag: --param large-function-growth= (Maximal growth due to inlining of large function (in percent))",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-asan-stack": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param asan-stack=",
+      "explore_start": 0,
+      "explore_stop": 1,
+      "sort": 31840,
+      "desc": "compiler flag: --param asan-stack= (Enable asan stack protection)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-branch-target-load-optimize2": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fbranch-target-load-optimize2",
+        "-fno-branch-target-load-optimize2"
+      ],
+      "desc": "compiler flag: -fbranch-target-load-optimize2",
+      "sort": 10050,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-devirtualize": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fdevirtualize",
+        "-fno-devirtualize"
+      ],
+      "desc": "compiler flag: -fdevirtualize",
+      "sort": 10220,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-omega-max-geqs": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param omega-max-geqs=",
+      "explore_start": 0,
+      "explore_stop": 512,
+      "sort": 30920,
+      "desc": "compiler flag: --param omega-max-geqs= (Bound on the number of inequalities in Omega constraint systems)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-selsched-max-sched-times": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param selsched-max-sched-times=",
+      "explore_start": 0,
+      "explore_stop": 4,
+      "sort": 31160,
+      "desc": "compiler flag: --param selsched-max-sched-times= (Maximum number of times that an insn could be scheduled)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-ipa-cp-single-call-penalty": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param ipa-cp-single-call-penalty=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 31670,
+      "desc": "compiler flag: --param ipa-cp-single-call-penalty= (Percentage penalty functions containg a single call to anotherfunction will receive when they are evaluated for cloning.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#base_opt": {
+      "tags": [
+        "base",
+        "basic",
+        "optimization"
+      ],
+      "choice": [
+        "-O3",
+        "-O0",
+        "-O1",
+        "-O2",
+        "-Os",
+        "-Ofast",
+        "-Og"
+      ],
+      "desc": "base compiler flag",
+      "sort": 10000,
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-loop-unroll-jam-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param loop-unroll-jam-size=",
+      "explore_start": 0,
+      "explore_stop": 8,
+      "sort": 31450,
+      "desc": "compiler flag: --param loop-unroll-jam-size= (size of unrolling factor for unroll-and-jam)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-scev-max-expr-size": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param scev-max-expr-size=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 30890,
+      "desc": "compiler flag: --param scev-max-expr-size= (Bound on size of expressions used in the scalar evolutions analyzer)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-modulo-backtrack-attempts": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-modulo-backtrack-attempts=",
+      "explore_start": 0,
+      "explore_stop": 80,
+      "sort": 30320,
+      "desc": "compiler flag: --param max-modulo-backtrack-attempts= (The maximum number of backtrack attempts the scheduler should make when modulo scheduling a loop)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-switch-conversion": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-switch-conversion",
+        "-fno-tree-switch-conversion"
+      ],
+      "desc": "compiler flag: -ftree-switch-conversion",
+      "sort": 11740,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-sched-ready-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-sched-ready-insns=",
+      "explore_start": 0,
+      "explore_stop": 200,
+      "sort": 31270,
+      "desc": "compiler flag: --param max-sched-ready-insns= (The maximum number of instructions ready to be issued to be considered by the scheduler during the first scheduling pass)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-scev-max-expr-complexity": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param scev-max-expr-complexity=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30900,
+      "desc": "compiler flag: --param scev-max-expr-complexity= (Bound on the complexity of the expressions in the scalar evolutions analyzer)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-dce": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fdce",
+        "-fno-dce"
+      ],
+      "desc": "compiler flag: -fdce",
+      "sort": 10190,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-guess-branch-probability": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fguess-branch-probability",
+        "-fno-guess-branch-probability"
+      ],
+      "desc": "compiler flag: -fno-guess-branch-probability",
+      "sort": 10840,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-cse-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-cse-insns=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 30840,
+      "desc": "compiler flag: --param max-cse-insns= (The maximum instructions CSE process before flushing)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-partial-pre": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-partial-pre",
+        "-fno-tree-partial-pre"
+      ],
+      "desc": "compiler flag: -ftree-partial-pre",
+      "sort": 11680,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-gcse-after-reload-partial-fraction": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param gcse-after-reload-partial-fraction=",
+      "explore_start": 0,
+      "explore_stop": 6,
+      "sort": 30430,
+      "desc": "compiler flag: --param gcse-after-reload-partial-fraction= (The threshold ratio for performing partial redundancy elimination after reload)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-prefetch-loop-arrays": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fprefetch-loop-arrays",
+        "-fno-prefetch-loop-arrays"
+      ],
+      "desc": "compiler flag: -fprefetch-loop-arrays",
+      "sort": 11000,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-sms-min-sc": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sms-min-sc=",
+      "explore_start": 0,
+      "explore_stop": 4,
+      "sort": 30630,
+      "desc": "compiler flag: --param sms-min-sc= (The minimum value of stage count that swing modulo scheduler will generate.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-pre": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-pre",
+        "-fno-tree-pre"
+      ],
+      "desc": "compiler flag: -ftree-pre",
+      "sort": 11670,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-prefetch-latency": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param prefetch-latency=",
+      "explore_start": 0,
+      "explore_stop": 400,
+      "sort": 31290,
+      "desc": "compiler flag: --param prefetch-latency= (The number of insns executed before prefetch is completed)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-vect-cost-model": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fvect-cost-model",
+        "-fno-vect-cost-model"
+      ],
+      "desc": "compiler flag: -fvect-cost-model",
+      "sort": 11870,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-inline-insns-auto": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-inline-insns-auto=",
+      "explore_start": 0,
+      "explore_stop": 80,
+      "sort": 30180,
+      "desc": "compiler flag: --param max-inline-insns-auto= (The maximum number of instructions when automatically inlining)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-pending-list-length": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-pending-list-length=",
+      "explore_start": 0,
+      "explore_stop": 64,
+      "sort": 30310,
+      "desc": "compiler flag: --param max-pending-list-length= (The maximum length of scheduling's pending operations list)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-vectorize": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-vectorize",
+        "-fno-tree-vectorize"
+      ],
+      "desc": "compiler flag: -ftree-vectorize",
+      "sort": 11770,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-selective-scheduling2": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fselective-scheduling2",
+        "-fno-selective-scheduling2"
+      ],
+      "desc": "compiler flag: -fselective-scheduling2",
+      "sort": 11250,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-completely-peel-loop-nest-depth": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-completely-peel-loop-nest-depth=",
+      "explore_start": 0,
+      "explore_stop": 16,
+      "sort": 30570,
+      "desc": "compiler flag: --param max-completely-peel-loop-nest-depth= (The maximum depth of a loop nest we completely peel)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-lim-expensive": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param lim-expensive=",
+      "explore_start": 0,
+      "explore_stop": 40,
+      "sort": 30850,
+      "desc": "compiler flag: --param lim-expensive= (The minimum cost of an expensive expression in the loop invariant motion)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-loop-vectorize": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-loop-vectorize",
+        "-fno-tree-loop-vectorize"
+      ],
+      "desc": "compiler flag: -ftree-loop-vectorize",
+      "sort": 11660,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-sink-frequency-threshold": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sink-frequency-threshold=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 31050,
+      "desc": "compiler flag: --param sink-frequency-threshold= (Target block's relative execution frequency (as a percentage) required to sink a statement)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-iterations-computation-cost": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-iterations-computation-cost=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30610,
+      "desc": "compiler flag: --param max-iterations-computation-cost= (Bound on the cost of an expression to compute the number of iterations)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-rerun-cse-after-loop": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-frerun-cse-after-loop",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "desc": "compiler flag: -frerun-cse-after-loop",
+      "sort": 11070,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-gcse-lm": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fgcse-lm",
+        "-fno-gcse-lm"
+      ],
+      "desc": "compiler flag: -fgcse-lm",
+      "sort": 10380,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-ira-share-save-slots": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fira-share-save-slots",
+        "-fno-ira-share-save-slots"
+      ],
+      "desc": "compiler flag: -fno-ira-share-save-slots",
+      "sort": 10570,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-schedule-insns": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fschedule-insns",
+        "-fno-schedule-insns"
+      ],
+      "desc": "compiler flag: -fschedule-insns",
+      "sort": 11210,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param--fira-region=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-fira-region=@var{region}",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30090,
+      "desc": "compiler flag: -fira-region=@var{region}",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-trapping-math": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftrapping-math",
+        "-fno-trapping-math"
+      ],
+      "desc": "compiler flag: -fno-trapping-math",
+      "sort": 10930,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param--falign-functions[=": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "-falign-functions[=]",
+      "explore_start": 0,
+      "explore_stop": 0,
+      "sort": 30010,
+      "desc": "compiler flag: -falign-functions[=]",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-sched-spec-prob-cutoff": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param sched-spec-prob-cutoff=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 31130,
+      "desc": "compiler flag: --param sched-spec-prob-cutoff= (The minimal probability of speculation success (in percents), so that speculative insn will be scheduled.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-dse": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-dse",
+        "-fno-tree-dse"
+      ],
+      "desc": "compiler flag: -ftree-dse",
+      "sort": 11540,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-loop-parallelize-all": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-floop-parallelize-all",
+        "-fno-loop-parallelize-all"
+      ],
+      "desc": "compiler flag: -floop-parallelize-all",
+      "sort": 10700,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-jump-thread-duplication-stmts": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-jump-thread-duplication-stmts=",
+      "explore_start": 0,
+      "explore_stop": 30,
+      "sort": 31250,
+      "desc": "compiler flag: --param max-jump-thread-duplication-stmts= (Maximum number of statements allowed in a block that needs to be duplicated when threading jumps)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-peephole": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fpeephole",
+        "-fno-peephole"
+      ],
+      "desc": "compiler flag: -fno-peephole",
+      "sort": 10870,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-integer-share-limit": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param integer-share-limit=",
+      "explore_start": 0,
+      "explore_stop": 502,
+      "sort": 31220,
+      "desc": "compiler flag: --param integer-share-limit= (The upper bound for sharing integer constants)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-selsched-max-lookahead": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param selsched-max-lookahead=",
+      "explore_start": 0,
+      "explore_stop": 100,
+      "sort": 31150,
+      "desc": "compiler flag: --param selsched-max-lookahead= (The maximum size of the lookahead window of selective scheduling)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-conserve-stack": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fconserve-stack",
+        "-fno-conserve-stack"
+      ],
+      "desc": "compiler flag: -fconserve-stack",
+      "sort": 10100,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-thread-jumps": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fthread-jumps",
+        "-fno-thread-jumps"
+      ],
+      "desc": "compiler flag: -fthread-jumps",
+      "sort": 11420,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-loop-im": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-loop-im",
+        "-fno-tree-loop-im"
+      ],
+      "desc": "compiler flag: -ftree-loop-im",
+      "sort": 11590,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-rename-registers": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-frename-registers",
+        "-fno-rename-registers"
+      ],
+      "desc": "compiler flag: -frename-registers",
+      "sort": 11030,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-max-completely-peel-times": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-completely-peel-times=",
+      "explore_start": 0,
+      "explore_stop": 32,
+      "sort": 30550,
+      "desc": "compiler flag: --param max-completely-peel-times= (The maximum number of peelings of a single loop that is peeled completely)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-sched-spec": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fsched-spec",
+        "-fno-sched-spec"
+      ],
+      "desc": "compiler flag: -fno-sched-spec",
+      "sort": 10900,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-btr-bb-exclusive": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fbtr-bb-exclusive",
+        "-fno-btr-bb-exclusive"
+      ],
+      "desc": "compiler flag: -fbtr-bb-exclusive",
+      "sort": 10060,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-tree-loop-distribute-patterns": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-loop-distribute-patterns",
+        "-fno-tree-loop-distribute-patterns"
+      ],
+      "desc": "compiler flag: -ftree-loop-distribute-patterns",
+      "sort": 11620,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#bool-ipa-icf": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fipa-icf",
+        "-fno-ipa-icf"
+      ],
+      "desc": "compiler flag: -fipa-icf",
+      "sort": 10540,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-align-loop-iterations": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param align-loop-iterations=",
+      "explore_start": 0,
+      "explore_stop": 8,
+      "sort": 30700,
+      "desc": "compiler flag: --param align-loop-iterations= (Loops iterating at least selected number of iterations will get loop alignement.)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-inline-min-speedup": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param inline-min-speedup=",
+      "explore_start": 0,
+      "explore_stop": 20,
+      "sort": 30160,
+      "desc": "compiler flag: --param inline-min-speedup= (The minimal estimated speedup allowing inliner to ignore inline-insns-single and inline-isnsns-auto)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-uninit-control-dep-attempts": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param uninit-control-dep-attempts=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 31910,
+      "desc": "compiler flag: --param uninit-control-dep-attempts= (Maximum number of nested calls to search for control dependenciesduring uninitialized variable analysis)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-stores-to-sink": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-stores-to-sink=",
+      "explore_start": 0,
+      "explore_stop": 4,
+      "sort": 31750,
+      "desc": "compiler flag: --param max-stores-to-sink= (Maximum number of conditional store pairs that can be sunk)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-loop-distribution": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-loop-distribution",
+        "-fno-tree-loop-distribution"
+      ],
+      "desc": "compiler flag: -ftree-loop-distribution",
+      "sort": 11610,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-large-unit-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param large-unit-insns=",
+      "explore_start": 0,
+      "explore_stop": 20000,
+      "sort": 30350,
+      "desc": "compiler flag: --param large-unit-insns= (The size of translation unit to be considered large)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-max-once-peeled-insns": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param max-once-peeled-insns=",
+      "explore_start": 0,
+      "explore_stop": 800,
+      "sort": 30560,
+      "desc": "compiler flag: --param max-once-peeled-insns= (The maximum number of insns of a peeled loop that rolls only once)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#param-asan-instrument-writes": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param asan-instrument-writes=",
+      "explore_start": 0,
+      "explore_stop": 1,
+      "sort": 31860,
+      "desc": "compiler flag: --param asan-instrument-writes= (Enable asan store operations protection)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-gcse-after-reload": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-fgcse-after-reload",
+        "-fno-gcse-after-reload"
+      ],
+      "desc": "compiler flag: -fgcse-after-reload",
+      "sort": 10360,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    },
+    "##compiler_flags#param-slp-max-insns-in-bb": {
+      "tags": [
+        "basic",
+        "parametric",
+        "optimization"
+      ],
+      "explore_prefix": "--param slp-max-insns-in-bb=",
+      "explore_start": 0,
+      "explore_stop": 2000,
+      "sort": 31530,
+      "desc": "compiler flag: --param slp-max-insns-in-bb= (Maximum number of instructions in basic block to be considered for SLP vectorization)",
+      "explore_step": 1,
+      "can_omit": "yes",
+      "default": "",
+      "type": "integer"
+    },
+    "##compiler_flags#bool-tree-slsr": {
+      "tags": [
+        "basic",
+        "boolean",
+        "optimization"
+      ],
+      "choice": [
+        "-ftree-slsr",
+        "-fno-tree-slsr"
+      ],
+      "desc": "compiler flag: -ftree-slsr",
+      "sort": 11720,
+      "can_omit": "yes",
+      "default": "",
+      "type": "text"
+    }
+  },
+  "characteristics": {}
+}
